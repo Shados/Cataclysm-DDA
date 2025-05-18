@@ -351,6 +351,12 @@
     "values": [
       { "value": "MOVEMENT_EXERTION_MODIFIER", "multiply": -0.2 },
       { "value": "CARRY_WEIGHT", "multiply": 0.8 },
+      {
+        "value": "CARRY_WEIGHT",
+        "add": 47000,
+        "//": "Roughly the maximum possible weight of the exoskeleton itself, with heavy armour plates, nightvision goggles, and a flashlight installed"
+      },
+      { "value": "STRENGTH", "add": 8 },
       { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
     ]
   },
@@ -363,7 +369,13 @@
     "condition": "ACTIVE",
     "values": [
       { "value": "MOVEMENT_EXERTION_MODIFIER", "multiply": -0.3 },
-      { "value": "CARRY_WEIGHT", "multiply": 0.6 },
+      { "value": "CARRY_WEIGHT", "multiply": 0.4 },
+      {
+        "value": "CARRY_WEIGHT",
+        "add": 47000,
+        "//": "Roughly the maximum possible weight of the exoskeleton itself, with heavy armour plates, nightvision goggles, and a flashlight installed"
+      },
+      { "value": "STRENGTH", "add": 6 },
       { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
     ]
   },
@@ -376,7 +388,13 @@
     "condition": "ACTIVE",
     "values": [
       { "value": "MOVEMENT_EXERTION_MODIFIER", "multiply": -0.4 },
-      { "value": "CARRY_WEIGHT", "multiply": 0.4 },
+      { "value": "CARRY_WEIGHT", "multiply": 0.2 },
+      {
+        "value": "CARRY_WEIGHT",
+        "add": 47000,
+        "//": "Roughly the maximum possible weight of the exoskeleton itself, with heavy armour plates, nightvision goggles, and a flashlight installed"
+      },
+      { "value": "STRENGTH", "add": 4 },
       { "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
     ]
   }
