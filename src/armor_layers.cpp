@@ -434,7 +434,8 @@ std::vector<std::string> clothing_flags_description( const item &worn_item, cons
         { flag_FLOTATION, translate_marker( "You will not drown today." ) },
         { flag_OVERSIZE, translate_marker( "It is very bulky." ) },
         { flag_SWIM_GOGGLES, translate_marker( "It helps you to see clearly underwater." ) },
-        { flag_SEMITANGIBLE, translate_marker( "It can occupy the same space as other things." ) }
+        { flag_SEMITANGIBLE, translate_marker( "It can occupy the same space as other things." ) },
+        { flag_NO_WEAR_EFFECT, translate_marker( "It occupies too little space to contribute to your defenses or your encumbrance." ) }
     };
 
     for( const std::pair<flag_id, std::string> &flag_pair : flag_descriptions ) {
@@ -476,7 +477,7 @@ item_penalties outfit::get_item_penalties( std::list<item>::const_iterator worn_
             bool first_integrated = true;
             const int num_items = std::count_if( worn.begin(), worn.end(),
             [layer, bp, &first_integrated]( const item & i ) {
-                if( i.has_layer( layer, bp ) && i.covers( bp ) && !i.has_flag( flag_SEMITANGIBLE ) ) {
+                if( i.has_layer( layer, bp ) && i.covers( bp ) && !i.has_flag( flag_SEMITANGIBLE ) && !i.has_flag( flag_PERSONAL ) && !i.has_flag( flag_NO_WEAR_EFFECT ) ) {
                     if( i.has_flag( flag_INTEGRATED ) ) {
                         if( first_integrated ) {
                             first_integrated = false;
@@ -505,7 +506,7 @@ item_penalties outfit::get_item_penalties( std::list<item>::const_iterator worn_
                 bool first_integrated = true;
                 const int num_items = std::count_if( worn.begin(), worn.end(),
                 [layer, bp, sbp, &first_integrated]( const item & i ) {
-                    if( i.has_layer( layer, sbp ) && i.covers( bp ) && !i.has_flag( flag_SEMITANGIBLE ) &&
+                    if( i.has_layer( layer, sbp ) && i.covers( bp ) && !i.has_flag( flag_SEMITANGIBLE ) && !i.has_flag( flag_PERSONAL ) && !i.has_flag( flag_NO_WEAR_EFFECT ) &&
                         i.covers( sbp ) ) {
                         if( i.has_flag( flag_INTEGRATED ) ) {
                             if( first_integrated ) {

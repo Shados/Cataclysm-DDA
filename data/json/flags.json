@@ -772,7 +772,7 @@
   {
     "id": "NO_WEAR_EFFECT",
     "type": "json_flag",
-    "info": "This item can be worn, but it <neutral>won't provide any effects</neutral>."
+    "info": "This item can be worn, but it <neutral>won't contribute to your defenses or your encumbrance</neutral>."
   },
   {
     "id": "PADDED",
