@@ -4102,24 +4102,24 @@ void item::armor_info( std::vector<iteminfo> &info, const iteminfo_query *parts,
                 // only some parts are rigid
                 std::string coverage = _( "<bold>Rigid Locations</bold>:" );
                 std::set<sub_bodypart_id> covered;
-                // if ablative check if there are hard plates in locations
-                if( armor->ablative ) {
-                    // if item has ablative armor we should check those too.
-                    for( const item_pocket *pocket : get_all_contained_pockets() ) {
-                        // if the pocket is ablative and not empty we should use its values
-                        if( pocket->get_pocket_data()->ablative && !pocket->empty() ) {
-                            // get the contained plate
-                            const item &ablative_armor = pocket->front();
-                            for( const armor_portion_data &entry : ablative_armor.find_armor_data()->sub_data ) {
-                                if( entry.rigid ) {
-                                    for( const sub_bodypart_str_id &sbp : entry.sub_coverage ) {
-                                        covered.emplace( sbp );
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                // // if ablative check if there are hard plates in locations
+                // if( armor->ablative ) {
+                //     // if item has ablative armor we should check those too.
+                //     for( const item_pocket *pocket : get_all_contained_pockets() ) {
+                //         // if the pocket is ablative and not empty we should use its values
+                //         if( pocket->get_pocket_data()->ablative && !pocket->empty() ) {
+                //             // get the contained plate
+                //             const item &ablative_armor = pocket->front();
+                //             for( const armor_portion_data &entry : ablative_armor.find_armor_data()->sub_data ) {
+                //                 if( entry.rigid ) {
+                //                     for( const sub_bodypart_str_id &sbp : entry.sub_coverage ) {
+                //                         covered.emplace( sbp );
+                //                     }
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
                 for( const armor_portion_data &entry : armor->sub_data ) {
                     if( entry.rigid ) {
                         for( const sub_bodypart_str_id &sbp : entry.sub_coverage ) {
@@ -15160,16 +15160,16 @@ bool item::is_rigid() const
         is_rigid |= portion.rigid;
     }
 
-    // check if ablative pieces are rigid too
-    if( is_ablative() ) {
-        for( const item_pocket *pocket : contents.get_all_ablative_pockets() ) {
-            if( !pocket->empty() ) {
-                // get the contained plate
-                const item &ablative_armor = pocket->front();
-                is_rigid |= ablative_armor.is_rigid();
-            }
-        }
-    }
+    // // check if ablative pieces are rigid too
+    // if( is_ablative() ) {
+    //     for( const item_pocket *pocket : contents.get_all_ablative_pockets() ) {
+    //         if( !pocket->empty() ) {
+    //             // get the contained plate
+    //             const item &ablative_armor = pocket->front();
+    //             is_rigid |= ablative_armor.is_rigid();
+    //         }
+    //     }
+    // }
 
     return is_rigid;
 }
@@ -15217,16 +15217,16 @@ bool item::is_bp_rigid( const T &bp ) const
         is_rigid |= portion->rigid;
     }
 
-    // check if ablative pieces are rigid too
-    if( is_ablative() ) {
-        for( const item_pocket *pocket : contents.get_all_ablative_pockets() ) {
-            if( !pocket->empty() ) {
-                // get the contained plate
-                const item &ablative_armor = pocket->front();
-                is_rigid |= ablative_armor.is_bp_rigid( bp );
-            }
-        }
-    }
+    // // check if ablative pieces are rigid too
+    // if( is_ablative() ) {
+    //     for( const item_pocket *pocket : contents.get_all_ablative_pockets() ) {
+    //         if( !pocket->empty() ) {
+    //             // get the contained plate
+    //             const item &ablative_armor = pocket->front();
+    //             is_rigid |= ablative_armor.is_bp_rigid( bp );
+    //         }
+    //     }
+    // }
 
     return is_rigid;
 }

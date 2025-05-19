@@ -401,36 +401,36 @@ std::optional<std::list<item>::iterator> outfit::wear_item( Character &guy, cons
 
 void outfit::recalc_ablative_blocking( const Character *guy )
 {
-    std::set<sub_bodypart_id> rigid_locations;
+    // std::set<sub_bodypart_id> rigid_locations;
 
-    // get all rigid locations
-    // ablative pocketed armor shouldn't block adding ablative pieces
-    for( const item &w : worn ) {
-        if( w.is_rigid() && !w.is_ablative() ) {
-            for( const sub_bodypart_id &sbp : w.get_covered_sub_body_parts() ) {
-                if( w.is_bp_rigid( sbp ) ) {
-                    rigid_locations.emplace( sbp );
-                }
-            }
-        }
-    }
+    // // get all rigid locations
+    // // ablative pocketed armor shouldn't block adding ablative pieces
+    // for( const item &w : worn ) {
+    //     if( w.is_rigid() && !w.is_ablative() ) {
+    //         for( const sub_bodypart_id &sbp : w.get_covered_sub_body_parts() ) {
+    //             if( w.is_bp_rigid( sbp ) ) {
+    //                 rigid_locations.emplace( sbp );
+    //             }
+    //         }
+    //     }
+    // }
 
-    bool should_warn = false;
+    // bool should_warn = false;
 
-    // pass that info to all the ablative pockets
-    for( item &w : worn ) {
-        if( w.is_ablative() ) {
-            should_warn = true;
-            for( item_pocket *p : w.get_all_ablative_pockets() ) {
-                p->set_no_rigid( rigid_locations );
-            }
-        }
-    }
+    // // pass that info to all the ablative pockets
+    // for( item &w : worn ) {
+    //     if( w.is_ablative() ) {
+    //         should_warn = true;
+    //         for( item_pocket *p : w.get_all_ablative_pockets() ) {
+    //             p->set_no_rigid( rigid_locations );
+    //         }
+    //     }
+    // }
 
-    if( should_warn && !rigid_locations.empty() ) {
-        guy->add_msg_if_player( m_warning,
-                                _( "You are wearing rigid armor with armor that has pockets for armor.  Until hard armor is removed inserting plates on those locations will be disabled." ) );
-    }
+    // if( should_warn && !rigid_locations.empty() ) {
+    //     guy->add_msg_if_player( m_warning,
+    //                             _( "You are wearing rigid armor with armor that has pockets for armor.  Until hard armor is removed inserting plates on those locations will be disabled." ) );
+    // }
 }
 
 std::optional<std::list<item>::iterator> Character::wear_item( const item &to_wear,
