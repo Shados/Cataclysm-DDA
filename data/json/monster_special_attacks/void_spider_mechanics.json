@@ -349,6 +349,27 @@
     "id": "EOC_VOID_SPIDER_ON_DEATH",
     "effect": [
       { "run_eocs": "EOC_VOID_SPIDER_KILLED", "time_in_future": "0 seconds" },
+      {
+        "run_eocs": [
+          {
+            "id": "EOC_VOID_SPIDER_SPAWN_EGGS_ON_DEATH",
+            "condition": { "math": [ "void_spider_nest_eggs_spawned != 1" ] },
+            "effect": [
+              { "mapgen_update": "void_spider_lair_eggs", "om_terrain": "void_spider_lair_a2" },
+              { "math": [ "void_spider_nest_eggs_spawned = 1" ] }
+            ]
+          },
+          {
+            "id": "EOC_VOID_SPIDER_SPAWN_CORPSES_ON_DEATH",
+            "condition": { "math": [ "void_spider_nest_corpses_spawned != 1" ] },
+            "effect": [
+              { "mapgen_update": "void_spider_lair_corpses", "om_terrain": "void_spider_lair_a1" },
+              { "math": [ "void_spider_nest_corpses_spawned = 1" ] }
+            ]
+          }
+        ],
+        "time_in_future": "10 seconds"
+      },
       { "run_eocs": "EOC_VOID_SPIDER_RESET_VARS", "time_in_future": "2 hours" },
       { "run_eocs": "EOC_DISSOLVE_VOID_SPIDER_LAIR", "time_in_future": "20 minutes" }
     ]
