@@ -256,11 +256,13 @@
       {
         "encumbrance": 12,
         "coverage": 95,
+        "rigid_layer_only": true,
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_back_l", "hand_back_r", "hand_wrist_l", "hand_wrist_r" ]
       },
       {
         "coverage": 80,
+        "rigid_layer_only": true,
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_fingers_l", "hand_fingers_r" ]
       }
@@ -504,6 +506,7 @@
     "armor": [
       {
         "coverage": 90,
+        "rigid_layer_only": true,
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_back_l", "hand_back_r" ],
         "material": [
@@ -561,6 +564,7 @@
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_wrist_l", "hand_wrist_r", "hand_fingers_l", "hand_fingers_r", "hand_back_l", "hand_back_r" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 25
       }
     ],
@@ -581,6 +585,7 @@
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_wrist_l", "hand_wrist_r", "hand_fingers_l", "hand_fingers_r", "hand_back_l", "hand_back_r" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 25
       }
     ]
@@ -910,6 +915,7 @@
       {
         "encumbrance": 20,
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_back_l", "hand_back_r" ],
         "material": [
@@ -919,6 +925,7 @@
       },
       {
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_wrist_l", "hand_wrist_r" ],
         "material": [
@@ -934,6 +941,7 @@
       },
       {
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_fingers_l", "hand_fingers_r" ],
         "material": [
@@ -1517,6 +1525,7 @@
       {
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_back_l", "hand_back_r", "hand_wrist_l", "hand_wrist_r" ],
         "material": [
@@ -1646,6 +1655,7 @@
       {
         "encumbrance": 20,
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_back_l", "hand_back_r", "hand_wrist_l", "hand_wrist_r" ],
         "material": [
@@ -1665,6 +1675,7 @@
       },
       {
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_fingers_l", "hand_fingers_r" ],
         "material": [

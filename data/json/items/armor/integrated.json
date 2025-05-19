@@ -24,6 +24,7 @@
         ],
         "covers": [ "hand_l", "hand_r", "foot_l", "foot_r", "leg_l", "leg_r", "arm_l", "arm_r", "torso", "head" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 1,
         "breathability": "GOOD"
       }
@@ -60,6 +61,7 @@
         "material": [ { "type": "wood", "covered_by_mat": 100, "thickness": 4 }, { "type": "wood", "covered_by_mat": 75, "thickness": 6 } ],
         "covers": [ "hand_l", "hand_r", "foot_l", "foot_r", "leg_l", "leg_r", "arm_l", "arm_r", "torso", "head" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 9
       }
     ]
@@ -95,6 +97,7 @@
         "material": [ { "type": "wood", "covered_by_mat": 100, "thickness": 6 }, { "type": "wood", "covered_by_mat": 75, "thickness": 7 } ],
         "covers": [ "hand_l", "hand_r", "foot_l", "foot_r", "leg_l", "leg_r", "arm_l", "arm_r", "torso", "head" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 10
       }
     ]
@@ -130,6 +133,7 @@
         "material": [ { "type": "wood", "covered_by_mat": 100, "thickness": 15 } ],
         "covers": [ "torso" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 20
       },
       {
@@ -139,6 +143,7 @@
         ],
         "covers": [ "leg_l", "leg_r", "arm_l", "arm_r", "head" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 8
       },
       {
@@ -146,6 +151,7 @@
         "covers": [ "hand_l", "hand_r" ],
         "specifically_covers": [ "hand_back_l", "hand_back_r", "hand_palm_l", "hand_palm_r", "hand_wrist_l", "hand_wrist_r" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 6
       },
       {
@@ -181,6 +187,7 @@
         ],
         "covers": [ "hand_l", "hand_r", "foot_l", "foot_r", "leg_l", "leg_r", "arm_l", "arm_r", "torso", "head" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 16
       },
       {
@@ -190,6 +197,7 @@
         ],
         "covers": [ "mouth", "eyes" ],
         "coverage": 90,
+        "rigid_layer_only": true,
         "encumbrance": 8
       }
     ]
@@ -744,6 +752,7 @@
         "material": [ { "type": "chitin", "covered_by_mat": 100, "thickness": 4.4 } ],
         "covers": [ "torso" ],
         "coverage": 95,
+        "rigid_layer_only": true,
         "encumbrance": 6
       },
       {
@@ -751,6 +760,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_upper_l", "arm_lower_l", "arm_upper_r", "arm_lower_r" ],
         "coverage": 95,
+        "rigid_layer_only": true,
         "encumbrance": 2
       },
       {
@@ -758,6 +768,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_elbow_l", "arm_shoulder_l", "arm_elbow_r", "arm_shoulder_r" ],
         "coverage": 95,
+        "rigid_layer_only": true,
         "encumbrance": 3
       },
       {
@@ -765,6 +776,7 @@
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_upper_l", "leg_lower_l", "leg_upper_r", "leg_lower_r" ],
         "coverage": 95,
+        "rigid_layer_only": true,
         "encumbrance": 3
       },
       {
@@ -772,12 +784,14 @@
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_hip_l", "leg_knee_l", "leg_hip_r", "leg_knee_r" ],
         "coverage": 95,
+        "rigid_layer_only": true,
         "encumbrance": 3
       },
       {
         "material": [ { "type": "chitin", "covered_by_mat": 100, "thickness": 2.2 } ],
         "covers": [ "hand_l", "hand_r" ],
         "coverage": 85,
+        "rigid_layer_only": true,
         "encumbrance": 3
       },
       {
@@ -906,6 +920,7 @@
         "material": [ { "type": "sclerotin", "covered_by_mat": 100, "thickness": 7 } ],
         "covers": [ "torso" ],
         "coverage": 95,
+        "rigid_layer_only": true,
         "encumbrance": 15
       },
       {
@@ -913,6 +928,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_upper_l", "arm_lower_l", "arm_upper_r", "arm_lower_r" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 5
       },
       {
@@ -920,6 +936,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_elbow_l", "arm_shoulder_l", "arm_elbow_r", "arm_shoulder_r" ],
         "coverage": 90,
+        "rigid_layer_only": true,
         "encumbrance": 7
       },
       {
@@ -927,6 +944,7 @@
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_upper_l", "leg_lower_l", "leg_upper_r", "leg_lower_r" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 6
       },
       {
@@ -934,6 +952,7 @@
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_hip_l", "leg_knee_l", "leg_hip_r", "leg_knee_r" ],
         "coverage": 90,
+        "rigid_layer_only": true,
         "encumbrance": 7
       },
       {
@@ -1077,6 +1096,7 @@
         "material": [ { "type": "sclerotin", "covered_by_mat": 100, "thickness": 7.5 } ],
         "covers": [ "torso" ],
         "coverage": 95,
+        "rigid_layer_only": true,
         "encumbrance": 18
       },
       {
@@ -1084,6 +1104,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_upper_l", "arm_lower_l", "arm_upper_r", "arm_lower_r" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 8
       },
       {
@@ -1091,6 +1112,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_elbow_l", "arm_shoulder_l", "arm_elbow_r", "arm_shoulder_r" ],
         "coverage": 90,
+        "rigid_layer_only": true,
         "encumbrance": 9
       },
       {
@@ -1098,6 +1120,7 @@
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_upper_l", "leg_lower_l", "leg_upper_r", "leg_lower_r" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 8
       },
       {
@@ -1105,6 +1128,7 @@
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_hip_l", "leg_knee_l", "leg_hip_r", "leg_knee_r" ],
         "coverage": 90,
+        "rigid_layer_only": true,
         "encumbrance": 8
       },
       {
@@ -1523,6 +1547,7 @@
         ],
         "covers": [ "head" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 6
       },
       {
@@ -1532,6 +1557,7 @@
         ],
         "covers": [ "torso" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 5
       },
       {
@@ -1543,6 +1569,7 @@
         ],
         "covers": [ "arm_l", "arm_r", "leg_l", "leg_r" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 8,
         "layers": [ "NORMAL" ]
       },
@@ -1553,6 +1580,7 @@
         ],
         "covers": [ "hand_l", "hand_r", "foot_l", "foot_r" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 6
       },
       {
@@ -1562,6 +1590,7 @@
         ],
         "covers": [ "mouth" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 2
       }
     ]

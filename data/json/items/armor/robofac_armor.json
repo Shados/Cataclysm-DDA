@@ -538,6 +538,7 @@
         "//": "skip encumbrance for additional parts of same body part",
         "encumbrance": 0,
         "coverage": 60,
+        "rigid_layer_only": true,
         "cover_vitals": 90,
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_lower" ]
@@ -545,6 +546,7 @@
       {
         "encumbrance": 2,
         "coverage": 95,
+        "rigid_layer_only": true,
         "cover_vitals": 90,
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_shoulder_l", "arm_shoulder_r" ]
@@ -553,6 +555,7 @@
         "//": "skip encumbrance for additional parts of same body part",
         "encumbrance": 0,
         "coverage": 85,
+        "rigid_layer_only": true,
         "cover_vitals": 90,
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_upper_l", "arm_upper_r" ]
@@ -580,6 +583,7 @@
       {
         "encumbrance": 2,
         "coverage": 100,
+        "rigid_layer_only": true,
         "cover_vitals": 90,
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_hip_l", "leg_hip_r" ]
@@ -588,6 +592,7 @@
         "//": "skip encumbrance for additional parts of same body part",
         "encumbrance": 0,
         "coverage": 85,
+        "rigid_layer_only": true,
         "cover_vitals": 90,
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_upper_l", "leg_upper_r" ]
@@ -616,6 +621,7 @@
       {
         "encumbrance": 3,
         "coverage": 95,
+        "rigid_layer_only": true,
         "cover_vitals": 90,
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_elbow_l", "arm_elbow_r", "arm_lower_l", "arm_lower_r" ]
@@ -644,6 +650,7 @@
       {
         "encumbrance": 3,
         "coverage": 95,
+        "rigid_layer_only": true,
         "cover_vitals": 90,
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_knee_l", "leg_knee_r", "leg_lower_l", "leg_lower_r" ]

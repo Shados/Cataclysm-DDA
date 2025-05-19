@@ -192,7 +192,7 @@
     "longest_side": "24 cm",
     "price": "83 USD 91 cent",
     "copy-from": "book_nonf_hard_phil_tpl",
-    "relative": { "intelligence": 1, "fun": -2 }
+    "relative": { "intelligence": 1, "read_fun": -2 }
   },
   {
     "id": "book_nonf_soft_phil_benoth",

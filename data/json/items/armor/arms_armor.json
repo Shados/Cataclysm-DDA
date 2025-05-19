@@ -24,6 +24,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 9,
         "coverage": 80,
+        "rigid_layer_only": true,
         "cover_melee": 80,
         "cover_ranged": 80,
         "cover_vitals": 0,
@@ -61,6 +62,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 5,
         "coverage": 90,
+        "rigid_layer_only": true,
         "cover_ranged": 95,
         "cover_vitals": 70,
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_upper_r", "arm_upper_l" ]
@@ -96,6 +98,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 3,
         "coverage": 90,
+        "rigid_layer_only": true,
         "cover_ranged": 95,
         "cover_vitals": 70,
         "specifically_covers": [ "arm_lower_r", "arm_lower_l" ]
@@ -126,6 +129,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 4,
         "coverage": 90,
+        "rigid_layer_only": true,
         "cover_melee": 90,
         "cover_ranged": 90,
         "cover_vitals": 50,
@@ -239,6 +243,7 @@
           { "type": "plastic", "covered_by_mat": 90, "thickness": 1.5 }
         ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "cover_vitals": 90
       },
       {
@@ -249,6 +254,7 @@
           { "type": "plastic", "covered_by_mat": 50, "thickness": 1.5 }
         ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "cover_vitals": 90
       },
       {
@@ -259,6 +265,7 @@
           { "type": "plastic", "covered_by_mat": 90, "thickness": 1.5 }
         ],
         "coverage": 80,
+        "rigid_layer_only": true,
         "cover_vitals": 90
       }
     ]
@@ -354,6 +361,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 16,
         "coverage": 95,
+        "rigid_layer_only": true,
         "cover_melee": 95,
         "cover_ranged": 95,
         "cover_vitals": 90,
@@ -406,6 +414,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 7,
         "coverage": 95,
+        "rigid_layer_only": true,
         "cover_melee": 95,
         "cover_ranged": 90,
         "cover_vitals": 70,
@@ -449,6 +458,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 3,
         "coverage": 95,
+        "rigid_layer_only": true,
         "cover_melee": 95,
         "cover_ranged": 90,
         "cover_vitals": 70,
@@ -492,6 +502,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 10,
         "coverage": 95,
+        "rigid_layer_only": true,
         "specifically_covers": [ "arm_shoulder_l", "arm_shoulder_r" ]
       }
     ]
@@ -533,6 +544,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 2,
         "coverage": 95,
+        "rigid_layer_only": true,
         "specifically_covers": [ "arm_elbow_l", "arm_elbow_r" ]
       }
     ]
@@ -618,6 +630,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 4,
         "coverage": 80,
+        "rigid_layer_only": true,
         "cover_melee": 80,
         "cover_ranged": 80,
         "cover_vitals": 0,
@@ -652,6 +665,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 6,
         "coverage": 95,
+        "rigid_layer_only": true,
         "specifically_covers": [ "arm_lower_r", "arm_lower_l" ]
       }
     ],
@@ -699,6 +713,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 14,
         "coverage": 80,
+        "rigid_layer_only": true,
         "cover_melee": 80,
         "cover_ranged": 80,
         "cover_vitals": 0,
@@ -1162,6 +1177,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 0,
         "coverage": 90,
+        "rigid_layer_only": true,
         "cover_melee": 90,
         "cover_ranged": 95,
         "cover_vitals": 90,
@@ -1193,6 +1209,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 5,
         "coverage": 95,
+        "rigid_layer_only": true,
         "cover_melee": 95,
         "cover_ranged": 90,
         "cover_vitals": 70,
@@ -1312,6 +1329,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 10
       }
     ],
@@ -1344,6 +1362,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 10
       }
     ]
@@ -1375,6 +1394,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 10
       }
     ]
@@ -1406,6 +1426,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 10
       }
     ]
@@ -1437,6 +1458,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 10
       }
     ]
@@ -1481,6 +1503,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 15
       }
     ],
@@ -1513,6 +1536,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 15
       }
     ]
@@ -1544,6 +1568,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 15
       }
     ]
@@ -1575,6 +1600,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 15
       }
     ]
@@ -1606,6 +1632,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 15
       }
     ]
@@ -1649,6 +1676,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 20
       }
     ],
@@ -1680,6 +1708,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 20
       }
     ]
@@ -1710,6 +1739,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 20
       }
     ]
@@ -1740,6 +1770,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 20
       }
     ]
@@ -1770,6 +1801,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "specifically_covers": [ "arm_lower_r", "arm_lower_l", "arm_elbow_r", "arm_elbow_l", "arm_upper_r", "arm_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 20
       }
     ]
@@ -1851,6 +1883,7 @@
         "covers": [ "arm_l", "arm_r" ],
         "encumbrance": 3,
         "coverage": 90,
+        "rigid_layer_only": true,
         "material": [
           { "type": "plastic_pad", "covered_by_mat": 100, "thickness": 5 },
           { "type": "thermo_resin", "covered_by_mat": 90, "thickness": 1.75 }

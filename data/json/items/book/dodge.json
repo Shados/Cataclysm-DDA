@@ -127,7 +127,7 @@
     "copy-from": "book_nonf_hard_dodge_tpl",
     "looks_like": "manual_gun",
     "max_level": 1,
-    "relative": { "intelligence": -1, "fun": 2 }
+    "relative": { "intelligence": -1, "read_fun": 2 }
   },
   {
     "id": "book_nonf_hard_dodge_tlwd",

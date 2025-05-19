@@ -174,8 +174,13 @@
     "looks_like": "touring_suit",
     "color": "pink",
     "armor": [
-      { "covers": [ "torso" ], "coverage": 90, "encumbrance": [ 17, 30 ] },
-      { "covers": [ "arm_l", "arm_r", "leg_l", "leg_r" ], "coverage": 95, "encumbrance": [ 17, 20 ] }
+      { "covers": [ "torso" ], "coverage": 90, "rigid_layer_only": true, "encumbrance": [ 17, 30 ] },
+      {
+        "covers": [ "arm_l", "arm_r", "leg_l", "leg_r" ],
+        "coverage": 95,
+        "rigid_layer_only": true,
+        "encumbrance": [ 17, 20 ]
+      }
     ],
     "pocket_data": [
       { "pocket_type": "CONTAINER", "max_contains_volume": "250 ml", "max_contains_weight": "1 kg", "moves": 80 },

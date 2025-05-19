@@ -34,12 +34,14 @@
         "material": [ { "type": "plastic", "covered_by_mat": 100, "thickness": 2.0 } ],
         "covers": [ "eyes" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 5
       },
       {
         "material": [ { "type": "plastic", "covered_by_mat": 100, "thickness": 2.0 } ],
         "covers": [ "mouth" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 5
       }
     ],
@@ -502,12 +504,14 @@
         "material": [ { "type": "plastic", "covered_by_mat": 100, "thickness": 2.0 } ],
         "covers": [ "eyes" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 5
       },
       {
         "material": [ { "type": "plastic", "covered_by_mat": 100, "thickness": 2.0 } ],
         "covers": [ "mouth" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 5
       }
     ],

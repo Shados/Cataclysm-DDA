@@ -669,21 +669,22 @@
     "armor": [
       {
         "covers": [ "foot_l", "foot_r" ],
-        "specifically_covers": [
-          "foot_toes_r",
-          "foot_toes_l",
-          "foot_ankle_r",
-          "foot_ankle_l",
-          "foot_heel_r",
-          "foot_heel_l",
-          "foot_arch_r",
-          "foot_arch_l"
-        ],
+        "specifically_covers": [ "foot_toes_r", "foot_toes_l", "foot_ankle_r", "foot_ankle_l", "foot_heel_r", "foot_heel_l" ],
         "material": [
           { "type": "nylon", "covered_by_mat": 100, "thickness": 0.4 },
           { "type": "neoprene", "covered_by_mat": 100, "thickness": 5.0 }
         ],
         "encumbrance": 20,
+        "rigid_layer_only": true,
+        "coverage": 100
+      },
+      {
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_arch_r", "foot_arch_l" ],
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 0.4 },
+          { "type": "neoprene", "covered_by_mat": 100, "thickness": 5.0 }
+        ],
         "coverage": 100
       },
       {

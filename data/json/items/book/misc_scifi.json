@@ -199,7 +199,7 @@
     "chapters": 40,
     "time": "6 m",
     "copy-from": "book_fict_hard_scifi_tpl",
-    "relative": { "intelligence": 1, "fun": -1 },
+    "relative": { "intelligence": 1, "read_fun": -1 },
     "melee_damage": { "bash": 1 }
   },
   {
@@ -217,7 +217,7 @@
     "chapters": 40,
     "time": "6 m",
     "copy-from": "book_fict_soft_scifi_tpl",
-    "relative": { "intelligence": 1, "fun": -1 }
+    "relative": { "intelligence": 1, "read_fun": -1 }
   },
   {
     "id": "book_fict_soft_scifi_cybrd",

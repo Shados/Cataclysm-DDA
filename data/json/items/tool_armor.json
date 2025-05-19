@@ -1191,7 +1191,7 @@
         "default_magazine": "light_battery_cell"
       }
     ],
-    "armor": [ { "encumbrance": 5, "coverage": 95, "covers": [ "eyes" ] } ],
+    "armor": [ { "encumbrance": 5, "coverage": 95, "rigid_layer_only": true, "covers": [ "eyes" ] } ],
     "material_thickness": 1,
     "environmental_protection": 1,
     "flags": [ "WATCH", "ALARMCLOCK", "FRAGILE", "WATER_BREAK", "PADDED", "ELECTRONIC" ],
@@ -1232,7 +1232,7 @@
         "ememory_max": "1 TB"
       }
     ],
-    "armor": [ { "encumbrance": 5, "coverage": 100, "covers": [ "eyes" ] } ],
+    "armor": [ { "encumbrance": 5, "coverage": 100, "rigid_layer_only": true, "covers": [ "eyes" ] } ],
     "material_thickness": 1,
     "environmental_protection": 1,
     "flags": [
@@ -1380,6 +1380,7 @@
         ],
         "encumbrance": 5,
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "eyes" ],
         "volume_encumber_modifier": 0
       },
@@ -1390,7 +1391,7 @@
         ],
         "encumbrance": 10,
         "coverage": 100,
-        "covers": [ "mouth", "head", "torso", "arm_l", "arm_r", "leg_l", "leg_r", "hand_l", "hand_r" ],
+        "covers": [ "mouth", "head" ],
         "volume_encumber_modifier": 0
       },
       {
@@ -1400,6 +1401,18 @@
         ],
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
+        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r", "hand_l", "hand_r" ],
+        "volume_encumber_modifier": 0
+      },
+      {
+        "material": [
+          { "type": "carbide", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "hyperweave_off", "covered_by_mat": 100, "thickness": 2.0 }
+        ],
+        "encumbrance": 10,
+        "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "foot_l", "foot_r" ],
         "specifically_covers": [
           "foot_toes_r",
@@ -1479,6 +1492,7 @@
         ],
         "encumbrance": 5,
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "eyes" ],
         "volume_encumber_modifier": 0
       },
@@ -1489,7 +1503,7 @@
         ],
         "encumbrance": 10,
         "coverage": 100,
-        "covers": [ "mouth", "head", "torso", "arm_l", "arm_r", "leg_l", "leg_r", "hand_l", "hand_r" ],
+        "covers": [ "mouth", "head" ],
         "volume_encumber_modifier": 0
       },
       {
@@ -1499,6 +1513,18 @@
         ],
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
+        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r", "hand_l", "hand_r" ],
+        "volume_encumber_modifier": 0
+      },
+      {
+        "material": [
+          { "type": "carbide", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "hyperweave_on", "covered_by_mat": 100, "thickness": 2.0 }
+        ],
+        "encumbrance": 10,
+        "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "foot_l", "foot_r" ],
         "specifically_covers": [
           "foot_toes_r",
@@ -1650,6 +1676,7 @@
         "material": [ { "type": "lvl4ballisticglass", "covered_by_mat": 100, "thickness": 1.0 } ],
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "mouth", "eyes" ],
         "layers": [ "OUTER" ],
         "volume_encumber_modifier": 0
@@ -1676,6 +1703,7 @@
         ],
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "torso" ],
         "volume_encumber_modifier": 0
       },
@@ -1687,6 +1715,7 @@
         "//": "hands are lighter armored",
         "encumbrance": 5,
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "hand_l", "hand_r" ],
         "volume_encumber_modifier": 0
       },
@@ -1712,6 +1741,7 @@
         "//": "limbs are lighter armored than torso but still strongly armored this is the non joints so extra hardsteel",
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "arm_l", "arm_r", "leg_l", "leg_r" ],
         "volume_encumber_modifier": 0
       }
@@ -2171,6 +2201,7 @@
         "material": [ { "type": "hard_plastic_transp", "covered_by_mat": 100, "thickness": 5 } ],
         "covers": [ "eyes" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 25
       }
     ],
@@ -2242,6 +2273,7 @@
         "material": [ { "type": "plastic", "covered_by_mat": 100, "thickness": 3 } ],
         "covers": [ "eyes" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 12
       }
     ],
