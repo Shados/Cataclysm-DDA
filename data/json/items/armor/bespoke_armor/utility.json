@@ -115,6 +115,7 @@
         ],
         "covers": [ "eyes" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 25
       }
     ]

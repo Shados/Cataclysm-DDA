@@ -1995,6 +1995,7 @@
         "encumbrance": 4,
         "volume_encumber_modifier": 0.25,
         "coverage": 40,
+        "rigid_layer_only": true,
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_hip_l", "leg_hip_r" ]
       }

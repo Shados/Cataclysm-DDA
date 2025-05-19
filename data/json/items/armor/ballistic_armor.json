@@ -149,6 +149,7 @@
           { "type": "plastic_pad", "covered_by_mat": 100, "thickness": 2.0 }
         ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "cover_vitals": 100,
         "covers": [ "torso", "arm_l", "arm_r" ],
         "encumbrance": [ 71, 80 ]
@@ -209,6 +210,7 @@
           { "type": "plastic_pad", "covered_by_mat": 100, "thickness": 2 }
         ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "cover_vitals": 100,
         "covers": [ "torso", "arm_l", "arm_r" ],
         "encumbrance": [ 31, 55 ]
@@ -243,6 +245,7 @@
         ],
         "encumbrance": 0,
         "coverage": 45,
+        "rigid_layer_only": true,
         "cover_vitals": 100,
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_upper", "torso_lower" ]
@@ -269,7 +272,15 @@
     "non_functional": "destroyed_large_ceramic_plate",
     "damage_verb": "makes a crunch, something has shifted",
     "flags": [ "ABLATIVE_LARGE", "CANT_WEAR", "NO_SALVAGE" ],
-    "armor": [ { "encumbrance": 2, "coverage": 45, "covers": [ "torso" ], "specifically_covers": [ "torso_upper" ] } ]
+    "armor": [
+      {
+        "encumbrance": 2,
+        "coverage": 45,
+        "rigid_layer_only": true,
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper" ]
+      }
+    ]
   },
   {
     "id": "stab_plate",
@@ -331,6 +342,7 @@
         ],
         "encumbrance": 1,
         "coverage": 45,
+        "rigid_layer_only": true,
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_upper" ]
       }
@@ -362,6 +374,7 @@
         "material": [ { "type": "qt_steel", "covered_by_mat": 100, "thickness": 6.35 } ],
         "encumbrance": 3,
         "coverage": 45,
+        "rigid_layer_only": true,
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_upper" ]
       }
@@ -395,6 +408,7 @@
         ],
         "encumbrance": 3,
         "coverage": 45,
+        "rigid_layer_only": true,
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_upper" ]
       }
@@ -424,6 +438,7 @@
         ],
         "encumbrance": 1,
         "coverage": 45,
+        "rigid_layer_only": true,
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_upper" ]
       }
@@ -520,7 +535,15 @@
     "non_functional": "destroyed_medium_ceramic_plate",
     "damage_verb": "makes a crunch, something has shifted",
     "flags": [ "ABLATIVE_MEDIUM", "CANT_WEAR", "NO_SALVAGE" ],
-    "armor": [ { "encumbrance": 1, "coverage": 35, "covers": [ "torso" ], "specifically_covers": [ "torso_lower" ] } ]
+    "armor": [
+      {
+        "encumbrance": 1,
+        "coverage": 35,
+        "rigid_layer_only": true,
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_lower" ]
+      }
+    ]
   },
   {
     "id": "scrap_esbi_plate",
@@ -550,6 +573,7 @@
         ],
         "encumbrance": 1,
         "coverage": 35,
+        "rigid_layer_only": true,
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_lower" ]
       }
@@ -579,6 +603,7 @@
         ],
         "encumbrance": 1,
         "coverage": 35,
+        "rigid_layer_only": true,
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_lower" ]
       }
@@ -1412,6 +1437,7 @@
         ],
         "encumbrance": 14,
         "coverage": 100,
+        "rigid_layer_only": true,
         "cover_vitals": 95,
         "covers": [ "torso" ],
         "volume_encumber_modifier": 0.25
@@ -1445,6 +1471,7 @@
         ],
         "encumbrance": 20,
         "coverage": 100,
+        "rigid_layer_only": true,
         "cover_vitals": 95,
         "covers": [ "torso" ],
         "volume_encumber_modifier": 0.25

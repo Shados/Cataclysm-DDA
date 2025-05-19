@@ -30,6 +30,7 @@
         "covers": [ "mouth" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "plastic_pad", "thickness": 2 },
           { "type": "kevlar_layered", "thickness": 4.4 },
@@ -41,6 +42,7 @@
         "covers": [ "eyes" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "lvl4ballisticglass", "thickness": 2 } ]
       }
     ],
@@ -88,6 +90,7 @@
         "covers": [ "torso" ],
         "encumbrance": 8,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -117,6 +120,7 @@
         "covers": [ "arm_r", "arm_l" ],
         "encumbrance": 8,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -130,6 +134,7 @@
         "specifically_covers": [ "hand_back_r", "hand_back_l", "hand_wrist_r", "hand_wrist_l" ],
         "encumbrance": 8,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -143,6 +148,7 @@
         "specifically_covers": [ "hand_palm_r", "hand_palm_l", "hand_fingers_r", "hand_fingers_l" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -170,6 +176,7 @@
         "covers": [ "leg_r", "leg_l" ],
         "encumbrance": 8,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -192,6 +199,7 @@
         ],
         "encumbrance": 8,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -228,6 +236,7 @@
         "covers": [ "mouth" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "plastic_pad", "thickness": 2 },
           { "type": "kevlar_layered", "thickness": 4.4 },
@@ -239,6 +248,7 @@
         "covers": [ "eyes" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "lvl4ballisticglass", "thickness": 2 } ]
       }
     ]
@@ -258,6 +268,7 @@
         "covers": [ "torso" ],
         "encumbrance": 6,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -282,6 +293,7 @@
         "covers": [ "arm_r", "arm_l" ],
         "encumbrance": 6,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -295,6 +307,7 @@
         "specifically_covers": [ "hand_back_r", "hand_back_l", "hand_wrist_r", "hand_wrist_l" ],
         "encumbrance": 6,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -308,6 +321,7 @@
         "specifically_covers": [ "hand_palm_r", "hand_palm_l", "hand_fingers_r", "hand_fingers_l" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -331,6 +345,7 @@
         "covers": [ "leg_r", "leg_l" ],
         "encumbrance": 6,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -353,6 +368,7 @@
         ],
         "encumbrance": 6,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -389,6 +405,7 @@
         "covers": [ "mouth" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "plastic_pad", "thickness": 2 },
           { "type": "kevlar_layered", "thickness": 4.4 },
@@ -400,6 +417,7 @@
         "covers": [ "eyes" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "lvl4ballisticglass", "thickness": 2 } ]
       }
     ]
@@ -419,6 +437,7 @@
         "covers": [ "torso" ],
         "encumbrance": 4,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -443,6 +462,7 @@
         "covers": [ "arm_r", "arm_l" ],
         "encumbrance": 4,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -456,6 +476,7 @@
         "specifically_covers": [ "hand_back_r", "hand_back_l", "hand_wrist_r", "hand_wrist_l" ],
         "encumbrance": 4,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -469,6 +490,7 @@
         "specifically_covers": [ "hand_palm_r", "hand_palm_l", "hand_fingers_r", "hand_fingers_l" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 1 },
@@ -492,6 +514,7 @@
         "covers": [ "leg_r", "leg_l" ],
         "encumbrance": 4,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -514,6 +537,7 @@
         ],
         "encumbrance": 4,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -552,6 +576,7 @@
         "covers": [ "mouth" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "plastic_pad", "thickness": 2 },
           { "type": "kevlar_layered", "thickness": 4.4 },
@@ -563,6 +588,7 @@
         "covers": [ "eyes" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "lvl4ballisticglass", "thickness": 2 } ]
       }
     ]
@@ -583,6 +609,7 @@
         "covers": [ "torso" ],
         "encumbrance": 12,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -609,6 +636,7 @@
         "covers": [ "arm_r", "arm_l" ],
         "encumbrance": 12,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -623,6 +651,7 @@
         "specifically_covers": [ "hand_back_r", "hand_back_l", "hand_wrist_r", "hand_wrist_l" ],
         "encumbrance": 12,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -637,6 +666,7 @@
         "specifically_covers": [ "hand_palm_r", "hand_palm_l", "hand_fingers_r", "hand_fingers_l" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -662,6 +692,7 @@
         "covers": [ "leg_r", "leg_l" ],
         "encumbrance": 12,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -685,6 +716,7 @@
         ],
         "encumbrance": 12,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -724,6 +756,7 @@
         "covers": [ "mouth" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "plastic_pad", "thickness": 2 },
           { "type": "kevlar_layered", "thickness": 4.4 },
@@ -735,6 +768,7 @@
         "covers": [ "eyes" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "lvl4ballisticglass", "thickness": 2 } ]
       }
     ]
@@ -755,6 +789,7 @@
         "covers": [ "torso" ],
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -781,6 +816,7 @@
         "covers": [ "arm_r", "arm_l" ],
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -795,6 +831,7 @@
         "specifically_covers": [ "hand_back_r", "hand_back_l", "hand_wrist_r", "hand_wrist_l" ],
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -809,6 +846,7 @@
         "specifically_covers": [ "hand_palm_r", "hand_palm_l", "hand_fingers_r", "hand_fingers_l" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -834,6 +872,7 @@
         "covers": [ "leg_r", "leg_l" ],
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -857,6 +896,7 @@
         ],
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -896,6 +936,7 @@
         "covers": [ "mouth" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "plastic_pad", "thickness": 2 },
           { "type": "kevlar_layered", "thickness": 4.4 },
@@ -907,6 +948,7 @@
         "covers": [ "eyes" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "lvl4ballisticglass", "thickness": 2 } ]
       }
     ]
@@ -927,6 +969,7 @@
         "covers": [ "torso" ],
         "encumbrance": 8,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -953,6 +996,7 @@
         "covers": [ "arm_r", "arm_l" ],
         "encumbrance": 8,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -967,6 +1011,7 @@
         "specifically_covers": [ "hand_back_r", "hand_back_l", "hand_wrist_r", "hand_wrist_l" ],
         "encumbrance": 8,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -981,6 +1026,7 @@
         "specifically_covers": [ "hand_palm_r", "hand_palm_l", "hand_fingers_r", "hand_fingers_l" ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 1 },
@@ -1006,6 +1052,7 @@
         "covers": [ "leg_r", "leg_l" ],
         "encumbrance": 8,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },
@@ -1029,6 +1076,7 @@
         ],
         "encumbrance": 8,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "nylon", "thickness": 1, "covered_by_mat": 5 },
           { "type": "plastic_pad", "thickness": 2 },

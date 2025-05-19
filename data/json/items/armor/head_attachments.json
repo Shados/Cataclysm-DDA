@@ -64,7 +64,7 @@
     "color": "dark_gray",
     "material_thickness": 1,
     "flags": [ "HELMET_MANDIBLE_GUARD", "CANT_WEAR" ],
-    "armor": [ { "encumbrance": 12, "coverage": 100, "covers": [ "mouth" ] } ]
+    "armor": [ { "encumbrance": 12, "coverage": 100, "rigid_layer_only": true, "covers": [ "mouth" ] } ]
   },
   {
     "id": "plastic_mandible_guard",
@@ -82,7 +82,7 @@
     "color": "light_blue",
     "material_thickness": 1,
     "flags": [ "HELMET_MANDIBLE_GUARD_STRAPPED", "CANT_WEAR" ],
-    "armor": [ { "encumbrance": 10, "coverage": 95, "covers": [ "mouth" ] } ]
+    "armor": [ { "encumbrance": 10, "coverage": 95, "rigid_layer_only": true, "covers": [ "mouth" ] } ]
   },
   {
     "id": "plastic_chin_guard",
@@ -100,7 +100,7 @@
     "color": "light_gray",
     "material_thickness": 0.1,
     "flags": [ "HELMET_MANDIBLE_GUARD_STRAPPED", "CANT_WEAR" ],
-    "armor": [ { "coverage": 60, "covers": [ "mouth" ], "specifically_covers": [ "mouth_chin" ] } ]
+    "armor": [ { "coverage": 60, "rigid_layer_only": true, "covers": [ "mouth" ], "specifically_covers": [ "mouth_chin" ] } ]
   },
   {
     "id": "counterweight_pouch",
@@ -161,7 +161,7 @@
     "color": "light_blue",
     "material_thickness": 1,
     "flags": [ "HELMET_FACE_SHIELD", "CANT_WEAR" ],
-    "armor": [ { "encumbrance": 2, "coverage": 90, "covers": [ "eyes" ] } ]
+    "armor": [ { "encumbrance": 2, "coverage": 90, "rigid_layer_only": true, "covers": [ "eyes" ] } ]
   },
   {
     "id": "face_shield",
@@ -215,7 +215,7 @@
     "color": "light_blue",
     "material_thickness": 1,
     "flags": [ "HELMET_FACE_SHIELD", "CANT_WEAR", "OUTER" ],
-    "armor": [ { "encumbrance": 4, "coverage": 100, "covers": [ "eyes", "mouth" ] } ]
+    "armor": [ { "encumbrance": 4, "coverage": 100, "rigid_layer_only": true, "covers": [ "eyes", "mouth" ] } ]
   },
   {
     "id": "military_nvg",
@@ -824,12 +824,14 @@
         "specifically_covers": [ "head_forehead" ],
         "material": [ { "type": "lc_steel", "covered_by_mat": 100, "thickness": 1.2 } ],
         "encumbrance": 7,
+        "rigid_layer_only": true,
         "coverage": 100
       },
       {
         "covers": [ "mouth" ],
         "material": [ { "type": "lc_steel", "covered_by_mat": 100, "thickness": 1.2 } ],
         "encumbrance": 7,
+        "rigid_layer_only": true,
         "coverage": 100
       }
     ]
@@ -962,6 +964,7 @@
           { "type": "gold", "covered_by_mat": 25, "thickness": 0.1 }
         ],
         "encumbrance": 7,
+        "rigid_layer_only": true,
         "coverage": 100
       },
       {
@@ -971,6 +974,7 @@
           { "type": "gold", "covered_by_mat": 25, "thickness": 0.1 }
         ],
         "encumbrance": 7,
+        "rigid_layer_only": true,
         "coverage": 100
       }
     ]
@@ -1015,6 +1019,7 @@
         "material": [ { "type": "thermo_resin", "covered_by_mat": 100, "thickness": 2.5 } ],
         "encumbrance": 0,
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "eyes" ]
       }
     ],
@@ -1037,6 +1042,7 @@
         "material": [ { "type": "thermo_resin", "covered_by_mat": 100, "thickness": 1 } ],
         "encumbrance": 2,
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "eyes" ]
       }
     ],
@@ -1060,6 +1066,7 @@
         "material": [ { "type": "thermo_resin", "covered_by_mat": 100, "thickness": 1.5 } ],
         "encumbrance": 40,
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "eyes" ]
       }
     ],
@@ -1088,6 +1095,7 @@
         "material": [ { "type": "glass", "covered_by_mat": 100, "thickness": 3.0 } ],
         "encumbrance": 0,
         "coverage": 75,
+        "rigid_layer_only": true,
         "covers": [ "eyes" ]
       }
     ],

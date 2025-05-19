@@ -38,6 +38,7 @@
           { "type": "hc_steel", "covered_by_mat": 100, "thickness": 0.5 }
         ],
         "encumbrance": 0,
+        "rigid_layer_only": true,
         "coverage": 100
       },
       {
@@ -165,6 +166,7 @@
           { "type": "hc_steel", "covered_by_mat": 100, "thickness": 0.5 }
         ],
         "encumbrance": 0,
+        "rigid_layer_only": true,
         "coverage": 100
       },
       {
@@ -240,6 +242,7 @@
           { "type": "hc_steel", "covered_by_mat": 100, "thickness": 0.5 }
         ],
         "encumbrance": 0,
+        "rigid_layer_only": true,
         "coverage": 100
       },
       {

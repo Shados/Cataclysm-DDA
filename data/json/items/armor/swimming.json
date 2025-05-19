@@ -660,6 +660,7 @@
     "environmental_protection": 12,
     "armor": [
       {
+        "rigid_layer_only": true,
         "covers": [ "foot_l", "foot_r" ],
         "specifically_covers": [
           "foot_toes_r",

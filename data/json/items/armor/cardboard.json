@@ -52,6 +52,7 @@
         ],
         "covers": [ "torso" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 18
       },
       {
@@ -61,6 +62,7 @@
         ],
         "covers": [ "arm_l", "arm_r" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 21
       },
       {
@@ -70,6 +72,7 @@
         ],
         "covers": [ "leg_l", "leg_r" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 23
       }
     ]
@@ -93,7 +96,7 @@
     "warmth": 15,
     "material_thickness": 6,
     "flags": [ "WATER_DISSOLVE", "FRAGILE_MELEE", "VARSIZE", "OUTER", "HARD" ],
-    "armor": [ { "encumbrance": 12, "coverage": 90, "covers": [ "torso" ] } ]
+    "armor": [ { "encumbrance": 12, "coverage": 90, "rigid_layer_only": true, "covers": [ "torso" ] } ]
   },
   {
     "id": "cardboard_crown",
