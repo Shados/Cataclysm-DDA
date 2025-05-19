@@ -85,6 +85,7 @@
         "covers": [ "eyes" ],
         "encumbrance": 5,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "lvl4ballisticglass", "thickness": 1 } ]
       },
       {
@@ -92,6 +93,7 @@
         "covers": [ "mouth" ],
         "encumbrance": 30,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "thermo_resin", "thickness": 1 } ]
       },
       {
@@ -99,6 +101,7 @@
         "covers": [ "head", "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
         "encumbrance": 30,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "lycra", "thickness": 0.2 },
           { "type": "nylon", "thickness": 1 },
@@ -193,6 +196,7 @@
         "covers": [ "eyes" ],
         "encumbrance": 5,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "lvl4ballisticglass", "thickness": 1 } ]
       },
       {
@@ -200,6 +204,7 @@
         "covers": [ "mouth" ],
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "thermo_resin", "thickness": 1 } ]
       },
       {
@@ -207,6 +212,7 @@
         "covers": [ "head", "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
         "encumbrance": 14,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "lycra", "thickness": 0.2 },
           { "type": "nylon", "thickness": 1 },
@@ -300,6 +306,7 @@
         "covers": [ "eyes" ],
         "encumbrance": 5,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "lvl4ballisticglass", "thickness": 1 } ]
       },
       {
@@ -307,6 +314,7 @@
         "covers": [ "mouth" ],
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "thermo_resin", "thickness": 1 } ]
       },
       {
@@ -314,6 +322,7 @@
         "covers": [ "head", "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
         "encumbrance": 12,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "lycra", "thickness": 0.2 },
           { "type": "nylon", "thickness": 1 },
@@ -407,6 +416,7 @@
         "covers": [ "eyes" ],
         "encumbrance": 5,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "lvl4ballisticglass", "thickness": 1 } ]
       },
       {
@@ -414,6 +424,7 @@
         "covers": [ "mouth" ],
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [ { "type": "thermo_resin", "thickness": 1 } ]
       },
       {
@@ -421,6 +432,7 @@
         "covers": [ "head", "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
         "encumbrance": 10,
         "coverage": 100,
+        "rigid_layer_only": true,
         "material": [
           { "type": "lycra", "thickness": 0.2 },
           { "type": "nylon", "thickness": 1 },
@@ -494,6 +506,7 @@
         "covers": [ "eyes" ],
         "encumbrance": 5,
         "coverage": 50,
+        "rigid_layer_only": true,
         "material": [ { "type": "lvl4ballisticglass", "thickness": 1 } ]
       },
       {
@@ -501,6 +514,7 @@
         "covers": [ "mouth" ],
         "encumbrance": 10,
         "coverage": 50,
+        "rigid_layer_only": true,
         "material": [ { "type": "thermo_resin", "thickness": 1 } ]
       },
       {
@@ -508,6 +522,7 @@
         "covers": [ "head", "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
         "encumbrance": 10,
         "coverage": 50,
+        "rigid_layer_only": true,
         "material": [
           { "type": "lycra", "thickness": 0.2 },
           { "type": "nylon", "thickness": 1 },
