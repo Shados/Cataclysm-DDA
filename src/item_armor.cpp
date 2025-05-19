@@ -1344,17 +1344,6 @@ bool item::is_rigid() const
         is_rigid |= portion.rigid;
     }
 
-    // check if ablative pieces are rigid too
-    if( is_ablative() ) {
-        for( const item_pocket *pocket : contents.get_ablative_pockets() ) {
-            if( !pocket->empty() ) {
-                // get the contained plate
-                const item &ablative_armor = pocket->front();
-                is_rigid |= ablative_armor.is_rigid();
-            }
-        }
-    }
-
     return is_rigid;
 }
 
@@ -1399,17 +1388,6 @@ bool item::is_bp_rigid( const T &bp ) const
 
     if( portion ) {
         is_rigid |= portion->rigid;
-    }
-
-    // check if ablative pieces are rigid too
-    if( is_ablative() ) {
-        for( const item_pocket *pocket : contents.get_ablative_pockets() ) {
-            if( !pocket->empty() ) {
-                // get the contained plate
-                const item &ablative_armor = pocket->front();
-                is_rigid |= ablative_armor.is_bp_rigid( bp );
-            }
-        }
     }
 
     return is_rigid;
