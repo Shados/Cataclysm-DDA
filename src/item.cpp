@@ -15203,7 +15203,8 @@ template <typename T>
 bool item::is_bp_rigid( const T &bp ) const
 {
     // overrides for the item overall
-    if( has_flag( flag_SOFT ) ) {
+    // NO_WEAR_EFFECT is there for jewelry and the like which is too small to be considered
+    if( has_flag( flag_SOFT ) || has_flag( flag_NO_WEAR_EFFECT ) ) {
         return false;
     } else if( has_flag( flag_HARD ) ) {
         return true;
@@ -15248,7 +15249,8 @@ bool item::is_bp_rigid_selective( const T &bp ) const
     }
 
     // overrides for the item overall
-    if( has_flag( flag_SOFT ) ) {
+    // NO_WEAR_EFFECT is there for jewelry and the like which is too small to be considered
+    if( has_flag( flag_SOFT ) || has_flag( flag_NO_WEAR_EFFECT ) ) {
         is_rigid = false;
     } else if( has_flag( flag_HARD ) ) {
         is_rigid = true;
