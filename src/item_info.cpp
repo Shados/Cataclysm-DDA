@@ -2167,24 +2167,6 @@ void item::armor_info( std::vector<iteminfo> &info, const iteminfo_query *parts,
                 // only some parts are rigid
                 std::string coverage = _( "<bold>Rigid Locations</bold>:" );
                 std::set<sub_bodypart_id> covered;
-                // if ablative check if there are hard plates in locations
-                if( armor->ablative ) {
-                    // if item has ablative armor we should check those too.
-                    for( const item_pocket *pocket : get_container_pockets() ) {
-                        // if the pocket is ablative and not empty we should use its values
-                        if( pocket->get_pocket_data()->ablative && !pocket->empty() ) {
-                            // get the contained plate
-                            const item &ablative_armor = pocket->front();
-                            for( const armor_portion_data &entry : ablative_armor.find_armor_data()->sub_data ) {
-                                if( entry.rigid ) {
-                                    for( const sub_bodypart_str_id &sbp : entry.sub_coverage ) {
-                                        covered.emplace( sbp );
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
                 for( const armor_portion_data &entry : armor->sub_data ) {
                     if( entry.rigid ) {
                         for( const sub_bodypart_str_id &sbp : entry.sub_coverage ) {

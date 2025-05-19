@@ -1575,15 +1575,15 @@ ret_val<item_pocket::contain_code> item_pocket::_can_contain( const item &it,
             }
         }
 
-        if( it.is_rigid() ) {
-            for( const sub_bodypart_id &sbp : it.get_covered_sub_body_parts() ) {
-                if( it.is_bp_rigid( sbp ) && std::count( no_rigid.begin(), no_rigid.end(), sbp ) != 0 ) {
-                    return ret_val<item_pocket::contain_code>::make_failure(
-                               contain_code::ERR_NO_SPACE,
-                               _( "ablative pocket is being worn with hard armor can't support hard plate" ) );
-                }
-            }
-        }
+        // if( it.is_rigid() ) {
+        //     for( const sub_bodypart_id &sbp : it.get_covered_sub_body_parts() ) {
+        //         if( it.is_bp_rigid( sbp ) && std::count( no_rigid.begin(), no_rigid.end(), sbp ) != 0 ) {
+        //             return ret_val<item_pocket::contain_code>::make_failure(
+        //                        contain_code::ERR_NO_SPACE,
+        //                        _( "ablative pocket is being worn with hard armor can't support hard plate" ) );
+        //         }
+        //     }
+        // }
         copies_remaining = std::max( 0, copies_remaining - 1 );
         return ret_val<item_pocket::contain_code>::make_success();
     }
