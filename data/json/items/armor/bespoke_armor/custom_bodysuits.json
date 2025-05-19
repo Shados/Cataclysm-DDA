@@ -322,6 +322,7 @@
         ],
         "covers": [ "torso", "leg_l", "leg_r", "arm_l", "arm_r" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": [ 17, 17 ]
       }
     ],

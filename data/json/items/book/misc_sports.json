@@ -7,7 +7,7 @@
     "description": "The dramatic tale of a small-time boxer who gets a rare chance to fight the heavy-weight champion, and seize his one chance to make a better life for himself while impressing the cute girl who works in the pet store.",
     "time": "20 m",
     "copy-from": "book_fict_soft_tpl",
-    "relative": { "chapters": 12, "fun": 1, "intelligence": 1 }
+    "relative": { "chapters": 12, "read_fun": 1, "intelligence": 1 }
   },
   {
     "id": "book_fict_soft_sports_bunt",
@@ -54,7 +54,7 @@
     "description": "This novel follows the humorous adventures of a professional athlete turned amateur reporter.",
     "//isbn13": 9780689105180,
     "copy-from": "book_fict_hard_tpl",
-    "relative": { "fun": 1 }
+    "relative": { "read_fun": 1 }
   },
   {
     "id": "book_fict_hard_sports_omni",
@@ -94,7 +94,7 @@
     "longest_side": "21 cm",
     "price": "12 USD 99 cent",
     "copy-from": "book_nonf_soft_tpl",
-    "relative": { "fun": 1, "intelligence": 1 }
+    "relative": { "read_fun": 1, "intelligence": 1 }
   },
   {
     "id": "book_nonf_soft_sports_lads",
@@ -108,7 +108,7 @@
     "longest_side": "20 cm",
     "price": "13 USD 99 cent",
     "copy-from": "book_nonf_soft_tpl",
-    "relative": { "fun": 1 }
+    "relative": { "read_fun": 1 }
   },
   {
     "id": "book_nonf_soft_sports_vlly",
@@ -122,7 +122,7 @@
     "longest_side": "28 cm",
     "chapters": 12,
     "copy-from": "book_nonf_soft_tpl",
-    "relative": { "fun": -1, "intelligence": -1 }
+    "relative": { "read_fun": -1, "intelligence": -1 }
   },
   {
     "id": "book_nonf_hard_sports_morg",
@@ -136,7 +136,7 @@
     "longest_side": "22 cm",
     "price": "39 USD 99 cent",
     "copy-from": "book_nonf_hard_tpl",
-    "relative": { "fun": -1, "intelligence": 1 }
+    "relative": { "read_fun": -1, "intelligence": 1 }
   },
   {
     "id": "book_nonf_hard_sports_bike",
@@ -167,7 +167,7 @@
     "longest_side": "18 cm",
     "price": "12 USD 99 cent",
     "copy-from": "book_fict_hard_tpl",
-    "relative": { "fun": 1, "intelligence": 2, "chapters": -10 }
+    "relative": { "read_fun": 1, "intelligence": 2, "chapters": -10 }
   },
   {
     "id": "book_nonf_hard_sports_hoop",

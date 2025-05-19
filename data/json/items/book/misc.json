@@ -474,7 +474,7 @@
     "time": "20 m",
     "copy-from": "book_fict_hard_tpl",
     "//bashing": "3 (2+1)",
-    "relative": { "intelligence": 1, "chapters": 12, "fun": 2, "melee_damage": { "bash": 1 } }
+    "relative": { "intelligence": 1, "chapters": 12, "read_fun": 2, "melee_damage": { "bash": 1 } }
   },
   {
     "id": "novel_satire",
@@ -516,7 +516,7 @@
     "longest_side": "21 cm",
     "chapters": 32,
     "copy-from": "book_fict_soft_satire_tpl",
-    "relative": { "fun": 1 }
+    "relative": { "read_fun": 1 }
   },
   {
     "id": "book_fict_soft_satire_dust",
@@ -587,7 +587,7 @@
     "name": { "str": "The Black Freighter", "str_pl": "copies of The Black Freighter" },
     "description": "Who watches the watchmen?  Pirate Jenny, that's who!  This swashbuckling adventure novel will make you feel swell.",
     "copy-from": "book_fict_soft_tpl",
-    "relative": { "fun": 2, "chapters": -8 }
+    "relative": { "read_fun": 2, "chapters": -8 }
   },
   {
     "id": "book_fict_soft_swash_searovers",
@@ -675,7 +675,7 @@
     "name": { "str": "Atwixt a Brace of Cacti", "str_pl": "copies of Atwixt a Brace of Cacti" },
     "description": "A grizzled clodhopper interviews a mess of rangehands, flummoxing longhorns and tenderfoot alike in a flusteration of jawing.",
     "copy-from": "paperback_western_em",
-    "relative": { "price": "4 USD", "intelligence": 4, "fun": 1 }
+    "relative": { "price": "4 USD", "intelligence": 4, "read_fun": 1 }
   },
   {
     "id": "book_fict_soft_west_bart",
@@ -692,7 +692,7 @@
     "name": { "str": "Six Beans in the Wheel", "str_pl": "copies of Six Beans in the Wheel" },
     "description": "The safety is off in this gun slinging tale of revenge and redemption by acclaimed author El Amor.",
     "copy-from": "paperback_western_em",
-    "relative": { "chapters": -2, "fun": 1 }
+    "relative": { "chapters": -2, "read_fun": 1 }
   },
   {
     "id": "book_fict_soft_west_calico",
@@ -709,7 +709,7 @@
     "name": { "str": "Riot on the Range", "str_pl": "copies of Riot on the Range" },
     "description": "Best selling author El Amor paints a visceral study in red with his latest western saga: Riot on the Range.",
     "copy-from": "paperback_western_em",
-    "relative": { "chapters": -1, "fun": 1 }
+    "relative": { "chapters": -1, "read_fun": 1 }
   },
   {
     "id": "book_fict_soft_west_vaq",
@@ -718,7 +718,7 @@
     "name": { "str": "Vaquero Sun", "str_pl": "copies of Vaquero Sun" },
     "description": "Western author El Amor relates the story of a dispossessed young man inspired by a heat stroke delusion to pursue justice against an evil land baron.",
     "copy-from": "paperback_western_em",
-    "relative": { "chapters": 2, "fun": 1 }
+    "relative": { "chapters": 2, "read_fun": 1 }
   },
   {
     "id": "book_fict_soft_west_vride",
@@ -727,7 +727,7 @@
     "name": { "str": "The Vendetta Riders", "str_pl": "copies of The Vendetta Riders" },
     "description": "A wild young man, fast on the draw, who thinks he has nothing to lose, falls in with a group of gun runners.",
     "copy-from": "paperback_western_em",
-    "relative": { "chapters": -1, "fun": -1 }
+    "relative": { "chapters": -1, "read_fun": -1 }
   },
   {
     "id": "phonebook",
@@ -1171,7 +1171,7 @@
     "weight": "120 g",
     "volume": "300 ml",
     "time": "10 m",
-    "relative": { "price": "-251 cent", "chapters": -26, "fun": 1 }
+    "relative": { "price": "-251 cent", "chapters": -26, "read_fun": 1 }
   },
   {
     "id": "occult_bobliographon",
@@ -1181,7 +1181,7 @@
     "description": "The back cover of this cheaply published paperback reads: \"These newly-released SubGenius revelations will SHOCK those who think they know Bob!  Unpredictables are not alone and possess amazing hidden powers of their own!  In a world without slack, a yeti lust revival saunters about.  WARNING: Do not fail to pay full price for this book; JHVH-1's wrath knows some bounds.\"",
     "copy-from": "paperback_occult",
     "time": "12 m",
-    "relative": { "fun": 1 }
+    "relative": { "read_fun": 1 }
   },
   {
     "id": "occult_glimpses",

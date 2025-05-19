@@ -14,8 +14,14 @@
     "looks_like": "cowboy_hat",
     "color": "white",
     "armor": [
-      { "covers": [ "head" ], "coverage": 100, "encumbrance_modifiers": [ "NONE" ] },
-      { "covers": [ "eyes", "mouth" ], "coverage": 100, "encumbrance": 5, "breathability": "GOOD" }
+      { "covers": [ "head" ], "coverage": 100, "rigid_layer_only": true, "encumbrance_modifiers": [ "NONE" ] },
+      {
+        "covers": [ "eyes", "mouth" ],
+        "coverage": 100,
+        "rigid_layer_only": true,
+        "encumbrance": 5,
+        "breathability": "GOOD"
+      }
     ],
     "warmth": 10,
     "material_thickness": 1,

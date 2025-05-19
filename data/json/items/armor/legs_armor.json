@@ -21,6 +21,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 9,
         "coverage": 80,
         "cover_melee": 80,
@@ -58,6 +59,7 @@
           { "type": "carpet_pilling", "covered_by_mat": 100, "thickness": 3.0 }
         ],
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 5,
         "coverage": 90,
         "cover_ranged": 95,
@@ -93,6 +95,7 @@
           { "type": "carpet_pilling", "covered_by_mat": 100, "thickness": 3.0 }
         ],
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 3,
         "coverage": 90,
         "cover_ranged": 95,
@@ -123,6 +126,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 2,
         "coverage": 90,
         "cover_melee": 90,
@@ -708,6 +712,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 14,
         "coverage": 95,
         "cover_melee": 95,
@@ -813,6 +818,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 0,
         "coverage": 90,
         "cover_melee": 90,
@@ -843,6 +849,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 5,
         "coverage": 95,
         "cover_melee": 95,
@@ -892,6 +899,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 4,
         "coverage": 90,
         "cover_melee": 90,
@@ -922,6 +930,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 8,
         "coverage": 95,
         "cover_melee": 95,
@@ -970,6 +979,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 3,
         "coverage": 95,
         "cover_melee": 95,
@@ -1020,6 +1030,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 7,
         "coverage": 95,
         "cover_melee": 95,
@@ -1062,6 +1073,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 3,
         "coverage": 95,
         "cover_melee": 95,
@@ -1104,6 +1116,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 12,
         "coverage": 95,
         "specifically_covers": [ "leg_hip_l", "leg_hip_r" ]
@@ -1145,6 +1158,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 2,
         "coverage": 95,
         "specifically_covers": [ "leg_knee_l", "leg_knee_r" ]
@@ -1230,6 +1244,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 4,
         "coverage": 80,
         "cover_melee": 80,
@@ -1264,6 +1279,7 @@
           { "type": "cotton", "covered_by_mat": 100, "thickness": 1.0 }
         ],
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "coverage": 95,
         "encumbrance": 15
       }
@@ -1309,6 +1325,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 14,
         "coverage": 80,
         "cover_melee": 80,
@@ -1374,6 +1391,7 @@
         ],
         "encumbrance": [ 0, 0 ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_knee_l", "leg_knee_r" ]
       }
@@ -1431,6 +1449,7 @@
       {
         "encumbrance": [ 12, 16 ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_hip_l", "leg_upper_l", "leg_lower_l", "leg_hip_r", "leg_upper_r", "leg_lower_r" ],
         "material": [
@@ -1441,6 +1460,7 @@
       {
         "encumbrance": [ 2, 2 ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_knee_l", "leg_knee_r" ],
         "material": [
@@ -1498,6 +1518,7 @@
       {
         "encumbrance": [ 12, 16 ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_hip_l", "leg_upper_l", "leg_lower_l", "leg_hip_r", "leg_upper_r", "leg_lower_r" ],
         "material": [
@@ -1508,6 +1529,7 @@
       {
         "encumbrance": [ 2, 2 ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_knee_l", "leg_knee_r" ],
         "material": [
@@ -1546,6 +1568,7 @@
           { "type": "plastic_pad", "covered_by_mat": 100, "thickness": 2.0 }
         ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "cover_vitals": 100,
         "covers": [ "leg_l", "leg_r" ],
         "encumbrance": 80
@@ -1581,6 +1604,7 @@
         ],
         "encumbrance": 40,
         "coverage": 100,
+        "rigid_layer_only": true,
         "cover_vitals": 100,
         "covers": [ "leg_l", "leg_r" ]
       }
@@ -1616,6 +1640,7 @@
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_lower_r", "leg_lower_l", "leg_knee_r", "leg_knee_l", "leg_upper_r", "leg_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 10
       }
     ],
@@ -1734,6 +1759,7 @@
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_lower_r", "leg_lower_l", "leg_knee_r", "leg_knee_l", "leg_upper_r", "leg_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 15
       }
     ],
@@ -1851,6 +1877,7 @@
         "covers": [ "leg_l", "leg_r" ],
         "specifically_covers": [ "leg_lower_r", "leg_lower_l", "leg_knee_r", "leg_knee_l", "leg_upper_r", "leg_upper_l" ],
         "coverage": 100,
+        "rigid_layer_only": true,
         "encumbrance": 20
       }
     ],
@@ -2067,6 +2094,7 @@
     "armor": [
       {
         "covers": [ "leg_l", "leg_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 3,
         "coverage": 90,
         "material": [
@@ -2077,6 +2105,7 @@
       },
       {
         "covers": [ "foot_l", "foot_r" ],
+        "rigid_layer_only": true,
         "encumbrance": 2,
         "coverage": 75,
         "material": [ { "type": "thermo_resin", "covered_by_mat": 100, "thickness": 1.5 } ],
