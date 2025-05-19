@@ -613,6 +613,7 @@ side outfit::is_wearing_shoes( const bodypart_id &bp ) const
                worn_item.has_flag( flag_PERSONAL ) ||
                worn_item.has_flag( flag_AURA ) ||
                worn_item.has_flag( flag_SEMITANGIBLE ) ||
+               worn_item.has_flag( flag_NO_WEAR_EFFECT ) ||
                worn_item.has_flag( flag_SKINTIGHT );
     };
     for( const item &worn_item : worn ) {
@@ -846,9 +847,9 @@ static void layer_item( std::map<bodypart_id, encumbrance_data> &vals, const ite
          * Setting layering_encumbrance to 0 at this point makes the item cease to exist
          * for the purposes of the layer penalty system. (normally an item has a minimum
          * layering_encumbrance of 2 )
-         * Personal layer items and semitangible items do not conflict.
+         * Personal layer items, semitangible, and no_wear_effect items do not conflict.
          */
-        if( it.has_flag( flag_SEMITANGIBLE ) ) {
+        if( it.has_flag( flag_SEMITANGIBLE ) || it.has_flag( flag_NO_WEAR_EFFECT ) ) {
             encumber_val = 0;
             layering_encumbrance = 0;
         }
