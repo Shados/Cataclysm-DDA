@@ -682,7 +682,7 @@
       {
         "type": "repair_item",
         "item_action_type": "repair_metal",
-        "materials": [ "plastic", "lead", "tin", "zinc" ],
+        "materials": [ "plastic", "thermo_resin", "lead", "tin", "zinc" ],
         "skill": "fabrication",
         "cost_scaling": 0.1,
         "move_cost": 1500
@@ -1236,7 +1236,7 @@
       {
         "type": "repair_item",
         "item_action_type": "repair_metal",
-        "materials": [ "plastic", "lead", "tin", "zinc" ],
+        "materials": [ "plastic", "thermo_resin", "lead", "tin", "zinc" ],
         "skill": "fabrication",
         "cost_scaling": 0.1,
         "move_cost": 1500
@@ -1273,7 +1273,7 @@
       {
         "type": "repair_item",
         "item_action_type": "repair_metal",
-        "materials": [ "plastic", "lead", "tin", "zinc" ],
+        "materials": [ "plastic", "thermo_resin", "lead", "tin", "zinc" ],
         "skill": "fabrication",
         "cost_scaling": 0.1,
         "move_cost": 1500
@@ -1298,7 +1298,7 @@
       {
         "type": "repair_item",
         "item_action_type": "repair_metal",
-        "materials": [ "plastic", "lead", "tin", "zinc" ],
+        "materials": [ "plastic", "thermo_resin", "lead", "tin", "zinc" ],
         "skill": "fabrication",
         "cost_scaling": 0.1,
         "move_cost": 1500

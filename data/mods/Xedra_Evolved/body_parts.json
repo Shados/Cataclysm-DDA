@@ -19,7 +19,7 @@
     "limb_scores": [ [ "manip", 0.1, 0.2 ], [ "lift", 0.2 ], [ "balance", 0.15 ], [ "block", 1.0 ], [ "swim", 0.1 ], [ "crawl", 0.3 ] ],
     "flags": [ "IGNORE_TEMP", "BIONIC_LIMB" ],
     "side": "right",
-    "sub_parts": [ "karma_hand" ],
+    "sub_parts": [ "karma_hand_up_left" ],
     "drench_capacity": 0,
     "is_limb": true,
     "base_hp": 100,
@@ -53,7 +53,7 @@
     "limb_type": "arm",
     "opposite_part": "karma_arm_up_r",
     "side": "left",
-    "sub_parts": [ "karma_hand" ]
+    "sub_parts": [ "karma_hand_up_right" ]
   },
   {
     "id": "karma_arm_lw_r",
@@ -72,7 +72,7 @@
     "limb_type": "arm",
     "opposite_part": "karma_arm_lw_l",
     "side": "right",
-    "sub_parts": [ "karma_hand" ]
+    "sub_parts": [ "karma_hand_lw_right" ]
   },
   {
     "id": "karma_arm_lw_l",
@@ -91,16 +91,46 @@
     "limb_type": "arm",
     "opposite_part": "karma_arm_lw_r",
     "side": "left",
-    "sub_parts": [ "karma_hand" ]
+    "sub_parts": [ "karma_hand_lw_left" ]
   },
   {
-    "id": "karma_hand",
+    "id": "karma_hand_up_right",
     "type": "sub_body_part",
     "max_coverage": 10,
-    "parent": "bp_null",
+    "parent": "karma_arm_up_r",
     "side": 1,
-    "opposite": "karma_hand",
-    "name": "karma hand",
+    "opposite": "karma_hand_up_left",
+    "name": "left karma hand",
+    "name_multiple": "karma hands"
+  },
+  {
+    "id": "karma_hand_up_left",
+    "type": "sub_body_part",
+    "max_coverage": 10,
+    "parent": "karma_arm_up_l",
+    "side": 2,
+    "opposite": "karma_hand_up_right",
+    "name": "right karma hand",
+    "name_multiple": "karma hands"
+  },
+  {
+    "id": "karma_hand_lw_right",
+    "type": "sub_body_part",
+    "max_coverage": 10,
+    "parent": "karma_arm_lw_r",
+    "side": 1,
+    "opposite": "karma_hand_lw_left",
+    "name": "left karma hand",
+    "name_multiple": "karma hands"
+  },
+  {
+    "id": "karma_hand_lw_left",
+    "type": "sub_body_part",
+    "max_coverage": 10,
+    "parent": "karma_arm_lw_l",
+    "side": 2,
+    "opposite": "karma_hand_lw_right",
+    "name": "right karma hand",
     "name_multiple": "karma hands"
   },
   {
@@ -123,16 +153,26 @@
     "drench_capacity": 0,
     "flags": [ "IGNORE_TEMP", "LIMB_UPPER", "BIONIC_LIMB", "CRAFT_IN_DARKNESS" ],
     "smash_message": "You use your flippin' face to smash the %s.  EXTREME.",
-    "sub_parts": [ "stalker_eye", "stalker_eye" ]
+    "sub_parts": [ "stalker_eye_left", "stalker_eye_right" ]
   },
   {
-    "id": "stalker_eye",
+    "id": "stalker_eye_left",
     "type": "sub_body_part",
-    "max_coverage": 10,
-    "parent": "bp_null",
+    "max_coverage": 50,
+    "parent": "stalker_eyes",
+    "side": 1,
+    "opposite": "stalker_eye_right",
+    "name": "left stalker eye",
+    "name_multiple": "stalker eyes"
+  },
+  {
+    "id": "stalker_eye_right",
+    "type": "sub_body_part",
+    "max_coverage": 50,
+    "parent": "stalker_eyes",
     "side": 2,
-    "opposite": "stalker_eye",
-    "name": "stalker eye",
+    "opposite": "stalker_eye_left",
+    "name": "right stalker eye",
     "name_multiple": "stalker eyes"
   },
   {
@@ -140,8 +180,8 @@
     "type": "body_part",
     "name": "gracken's eyes",
     "accusative": { "ctxt": "bodypart_accusative", "str": "gracken's eyes" },
-    "heading": "s. eyes",
-    "heading_multiple": "s. eyes",
+    "heading": "g. eyes",
+    "heading_multiple": "g. eyes",
     "encumbrance_text": "Ranged combat is hampered.",
     "encumbrance_limit": 60,
     "main_part": "head",
@@ -155,7 +195,7 @@
     "drench_capacity": 0,
     "flags": [ "IGNORE_TEMP", "LIMB_UPPER" ],
     "smash_message": "You use your flippin' face to smash the %s.  EXTREME.",
-    "sub_parts": [ "stalker_eye", "stalker_eye" ],
+    "sub_parts": [ "gracken_eye_left", "gracken_eye_right" ],
     "effects_on_hit": [
       {
         "id": "blind",
@@ -169,13 +209,23 @@
     ]
   },
   {
-    "id": "gracken_eye",
+    "id": "gracken_eye_left",
     "type": "sub_body_part",
-    "max_coverage": 10,
-    "parent": "bp_null",
+    "max_coverage": 50,
+    "parent": "gracken_eyes",
+    "side": 1,
+    "opposite": "gracken_eye_right",
+    "name": "left gracken eye",
+    "name_multiple": "gracken eyes"
+  },
+  {
+    "id": "gracken_eye_right",
+    "type": "sub_body_part",
+    "max_coverage": 50,
+    "parent": "gracken_eyes",
     "side": 2,
-    "opposite": "gracken_eye",
-    "name": "gracken eye",
+    "opposite": "gracken_eye_left",
+    "name": "right gracken eye",
     "name_multiple": "gracken eyes"
   },
   {
@@ -215,8 +265,8 @@
     "id": "devil_tail_tip",
     "type": "sub_body_part",
     "max_coverage": 10,
-    "parent": "bp_null",
-    "side": 1,
+    "parent": "devil_tail",
+    "side": 0,
     "opposite": "devil_tail_tip",
     "name": "devil's tail tip",
     "name_multiple": "devil's tail tips"
