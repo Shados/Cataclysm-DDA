@@ -252,30 +252,30 @@ void fungal_effects::spread_fungus_one_tile( const tripoint_bub_ms &p, const int
 
 void fungal_effects::spread_fungus( const tripoint_bub_ms &p )
 {
-    int growth = 1;
-    map &here = get_map();
-    for( const tripoint_bub_ms &tmp : here.points_in_radius( p, 1 ) ) {
-        if( tmp == p ) {
-            continue;
-        }
-        if( here.has_flag( ter_furn_flag::TFLAG_FUNGUS, tmp ) ) {
-            growth += 1;
-        }
-    }
+    //int growth = 1;
+    //map &here = get_map();
+    //for( const tripoint_bub_ms &tmp : here.points_in_radius( p, 1 ) ) {
+    //    if( tmp == p ) {
+    //        continue;
+    //    }
+    //    if( here.has_flag( ter_furn_flag::TFLAG_FUNGUS, tmp ) ) {
+    //        growth += 1;
+    //    }
+    //}
 
-    if( !here.has_flag_ter( ter_furn_flag::TFLAG_FUNGUS, p ) ) {
-        spread_fungus_one_tile( p, growth );
-    } else {
-        // Everything is already fungus
-        if( growth == 9 ) {
-            return;
-        }
-        for( const tripoint_bub_ms &dest : here.points_in_radius( p, 1 ) ) {
-            // One spread on average
-            if( !here.has_flag( ter_furn_flag::TFLAG_FUNGUS, dest ) && one_in( 9 - growth ) ) {
-                //growth chance is 100 in X simplified
-                spread_fungus_one_tile( dest, 10 );
-            }
-        }
-    }
+    //if( !here.has_flag_ter( ter_furn_flag::TFLAG_FUNGUS, p ) ) {
+    //    spread_fungus_one_tile( p, growth );
+    //} else {
+    //    // Everything is already fungus
+    //    if( growth == 9 ) {
+    //        return;
+    //    }
+    //    for( const tripoint_bub_ms &dest : here.points_in_radius( p, 1 ) ) {
+    //        // One spread on average
+    //        if( !here.has_flag( ter_furn_flag::TFLAG_FUNGUS, dest ) && one_in( 9 - growth ) ) {
+    //            //growth chance is 100 in X simplified
+    //            spread_fungus_one_tile( dest, 10 );
+    //        }
+    //    }
+    //}
 }

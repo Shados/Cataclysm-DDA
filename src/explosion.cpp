@@ -67,6 +67,7 @@ static const ammo_effect_str_id ammo_effect_NULL_SOURCE( "NULL_SOURCE" );
 
 static const damage_type_id damage_bash( "bash" );
 static const damage_type_id damage_bullet( "bullet" );
+static const damage_type_id damage_electric( "electric" );
 static const damage_type_id damage_heat( "heat" );
 
 static const efftype_id effect_blind( "blind" );
@@ -850,7 +851,8 @@ void emp_blast( const tripoint_bub_ms &p )
     if( player_character.pos_bub() == p ) {
         if( player_character.get_power_level() > 0_kJ &&
             !player_character.has_flag( json_flag_EMP_IMMUNE ) &&
-            !player_character.has_flag( json_flag_EMP_ENERGYDRAIN_IMMUNE ) ) {
+            !player_character.has_flag( json_flag_EMP_ENERGYDRAIN_IMMUNE ) &&
+            !player_character.is_immune_damage( damage_electric ) ) {
             add_msg( m_bad, _( "The EMP blast drains your power." ) );
             int max_drain = ( player_character.get_power_level() > 1000_kJ ? 1000 : units::to_kilojoule(
                                   player_character.get_power_level() ) );

@@ -19,6 +19,7 @@
     "name": "Thermoplastic Resin",
     "copy-from": "generic_polymer_resin",
     "//": "This material ID is for plastics that can be reshaped and molded by application of heat and return to their original properties when cooled, and these specific ones are quite hard and durable when in solid state.",
+    "repaired_with": "thermo_resin_chunk",
     "salvaged_into": "thermo_resin_chunk",
     "//1": "Most consumer polymers and plastics receive a UL94 rating for flammability and the lowest UL94 rating is HB, generally considered self-extinguishing. Plastics are flammable but should only contribute significant fuel in intense fires.",
     "burn_data": [

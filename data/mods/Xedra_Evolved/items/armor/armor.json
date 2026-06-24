@@ -1302,6 +1302,7 @@
     "name": { "str_sp": "\"Gunslinger\"" },
     "description": "Pair of flat armguards, fully carved with numbers and crosses.  Inside the left guard there is a text, cut with something sharp, that starts from \"Sent onto those that escaped limbo's clutches, and unleash the rage of all hell…\".",
     "material_thickness": 0.1,
+    "proportional": { "encumbrance": 0.08 },
     "passive_effects": [
       {
         "has": "WORN",

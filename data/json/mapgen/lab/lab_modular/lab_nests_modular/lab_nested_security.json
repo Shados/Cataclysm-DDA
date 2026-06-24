@@ -1116,11 +1116,5 @@
     "nested_mapgen_id": "power_armor_roulette",
     "weight": 300,
     "object": { "mapgensize": [ 1, 1 ], "place_loot": [ { "group": "power_armor_sets", "x": 0, "y": 0, "chance": 100 } ] }
-  },
-  {
-    "type": "mapgen",
-    "weight": 400,
-    "nested_mapgen_id": "power_armor_roulette",
-    "object": { "mapgensize": [ 1, 1 ], "place_monster": [ { "monster": "mon_zombie_armored", "x": 0, "y": 0 } ] }
   }
 ]

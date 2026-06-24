@@ -354,7 +354,8 @@
         "specifically_covers": [ "head_forehead", "head_ear_r", "head_ear_l" ]
       },
       { "encumbrance": 0, "coverage": 30, "covers": [ "head" ], "specifically_covers": [ "head_crown" ] },
-      { "encumbrance": 40, "coverage": 90, "covers": [ "eyes", "mouth" ], "rigid_layer_only": true }
+      { "encumbrance": 40, "coverage": 90, "covers": [ "eyes" ], "rigid_layer_only": true },
+      { "encumbrance": 0, "coverage": 90, "covers": [ "mouth" ], "rigid_layer_only": true }
     ]
   },
   {
@@ -390,7 +391,8 @@
         "specifically_covers": [ "head_forehead", "head_ear_r", "head_ear_l" ]
       },
       { "encumbrance": 0, "coverage": 30, "covers": [ "head" ], "specifically_covers": [ "head_crown" ] },
-      { "encumbrance": 45, "coverage": 90, "covers": [ "eyes", "mouth" ], "rigid_layer_only": true }
+      { "encumbrance": 45, "coverage": 90, "covers": [ "eyes" ], "rigid_layer_only": true },
+      { "encumbrance": 0, "coverage": 90, "covers": [ "mouth" ], "rigid_layer_only": true }
     ],
     "melee_damage": { "bash": 5 }
   },
@@ -798,7 +800,7 @@
     "price": "150 USD",
     "price_postapoc": "5 USD",
     "material": [ "cotton" ],
-    "weight": "3972 g",
+    "weight": "864 g",
     "volume": "2 L",
     "charges_per_use": 1,
     "use_action": {
@@ -1377,7 +1379,7 @@
         "material": [ { "type": "plastic", "covered_by_mat": 100, "thickness": 20.0 } ],
         "covers": [ "mouth" ],
         "coverage": 100,
-        "encumbrance": 15,
+        "encumbrance": 5,
         "layers": [ "OUTER" ],
         "rigid_layer_only": true
       },
@@ -1490,7 +1492,17 @@
         ],
         "encumbrance": 10,
         "coverage": 100,
-        "covers": [ "mouth", "head" ],
+        "covers": [ "head" ],
+        "volume_encumber_modifier": 0
+      },
+      {
+        "material": [
+          { "type": "carbide", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "hyperweave_off", "covered_by_mat": 100, "thickness": 2.0 }
+        ],
+        "encumbrance": 3,
+        "coverage": 100,
+        "covers": [ "mouth" ],
         "volume_encumber_modifier": 0
       },
       {
@@ -1603,7 +1615,17 @@
         ],
         "encumbrance": 10,
         "coverage": 100,
-        "covers": [ "mouth", "head" ],
+        "covers": [ "head" ],
+        "volume_encumber_modifier": 0
+      },
+      {
+        "material": [
+          { "type": "carbide", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "hyperweave_on", "covered_by_mat": 100, "thickness": 2.0 }
+        ],
+        "encumbrance": 3,
+        "coverage": 100,
+        "covers": [ "mouth" ],
         "volume_encumber_modifier": 0
       },
       {
@@ -1770,7 +1792,7 @@
     "armor": [
       {
         "material": [ { "type": "lvl4ballisticglass", "covered_by_mat": 100, "thickness": 1.0 } ],
-        "encumbrance": 10,
+        "encumbrance": 3,
         "coverage": 100,
         "rigid_layer_only": true,
         "covers": [ "mouth", "eyes" ],
@@ -1824,7 +1846,7 @@
         "encumbrance": 10,
         "coverage": 100,
         "covers": [ "foot_l", "foot_r" ],
-        "layers": [ "NORMAL", "OUTER" ],
+        "layers": [ "NORMAL" ],
         "volume_encumber_modifier": 0
       },
       {
@@ -2226,7 +2248,7 @@
     ],
     "use_action": [ "GASMASK_ACTIVATE" ],
     "tick_action": [ "GASMASK" ],
-    "armor": [ { "encumbrance": 15, "rigid_layer_only": true, "coverage": 100, "covers": [ "mouth" ] } ],
+    "armor": [ { "encumbrance": 3, "rigid_layer_only": true, "coverage": 100, "covers": [ "mouth" ] } ],
     "tool_ammo": "gasfilter_s"
   },
   {
@@ -2298,7 +2320,7 @@
           "insect_proboscis_bottom"
         ],
         "coverage": 100,
-        "encumbrance": [ 20, 40 ],
+        "encumbrance": [ 15, 15 ],
         "layers": [ "SKINTIGHT", "NORMAL" ]
       },
       {
@@ -2310,7 +2332,7 @@
         "covers": [ "mouth", "muzzle", "beak", "insect_proboscis" ],
         "specifically_covers": [ "mouth_cheeks", "muzzle_cheeks", "beak_nares", "insect_proboscis_cheeks" ],
         "coverage": 100,
-        "encumbrance": 20,
+        "encumbrance": 15,
         "layers": [ "SKINTIGHT", "NORMAL", "OUTER" ],
         "volume_encumber_modifier": 0
       }
@@ -2395,7 +2417,7 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "flag_restriction": [ "GASFILTER_MED" ], "default_magazine": "gasfilter_med" } ],
     "use_action": [ "GASMASK_ACTIVATE" ],
     "tick_action": [ "GASMASK" ],
-    "armor": [ { "encumbrance": 35, "rigid_layer_only": true, "coverage": 100, "covers": [ "mouth" ] } ],
+    "armor": [ { "encumbrance": 15, "rigid_layer_only": true, "coverage": 100, "covers": [ "mouth" ] } ],
     "tool_ammo": "gasfilter_m"
   },
   {
@@ -2430,7 +2452,7 @@
         ],
         "covers": [ "mouth", "muzzle", "beak", "insect_proboscis" ],
         "coverage": 100,
-        "encumbrance": 37
+        "encumbrance": 20
       },
       {
         "material": [ { "type": "hard_plastic_transp", "covered_by_mat": 100, "thickness": 5 } ],
@@ -2502,7 +2524,7 @@
         ],
         "covers": [ "mouth" ],
         "coverage": 100,
-        "encumbrance": 25
+        "encumbrance": 10
       },
       {
         "material": [ { "type": "plastic", "covered_by_mat": 100, "thickness": 3 } ],
@@ -2539,7 +2561,7 @@
         ],
         "covers": [ "mouth", "muzzle", "beak", "insect_proboscis" ],
         "coverage": 100,
-        "encumbrance": 38
+        "encumbrance": 22
       },
       {
         "material": [
@@ -2608,7 +2630,7 @@
         "material": [ { "type": "leather_treated", "covered_by_mat": 100, "thickness": 4 } ],
         "covers": [ "mouth", "muzzle", "beak", "insect_proboscis" ],
         "coverage": 100,
-        "encumbrance": 35
+        "encumbrance": 15
       }
     ],
     "warmth": 15,
@@ -2666,7 +2688,7 @@
         "material": [ { "type": "leather_treated", "covered_by_mat": 100, "thickness": 4 } ],
         "covers": [ "mouth", "beak", "muzzle", "insect_proboscis" ],
         "coverage": 100,
-        "encumbrance": 35
+        "encumbrance": 15
       },
       {
         "material": [ { "type": "hard_plastic_transp", "covered_by_mat": 100, "thickness": 5 } ],
@@ -4185,7 +4207,7 @@
         "specifically_covers": [ "head_crown", "head_ear_r", "head_ear_l", "head_throat" ]
       },
       {
-        "encumbrance": 10,
+        "encumbrance": 0,
         "coverage": 100,
         "covers": [ "mouth" ],
         "specifically_covers": [ "mouth_lips", "mouth_cheeks", "mouth_chin" ]
@@ -4721,7 +4743,10 @@
         "default_magazine": "medium_battery_cell"
       }
     ],
-    "armor": [ { "encumbrance": 30, "coverage": 100, "covers": [ "head", "eyes", "mouth" ] } ],
+    "armor": [
+      { "encumbrance": 30, "coverage": 100, "covers": [ "head", "eyes" ] },
+      { "encumbrance": 0, "coverage": 100, "covers": [ "mouth" ] }
+    ],
     "tool_ammo": "battery"
   },
   {
