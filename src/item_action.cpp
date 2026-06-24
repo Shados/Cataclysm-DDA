@@ -346,7 +346,7 @@ void game::item_action_menu( item_location loc )
 
         const use_function *method = elem.second->get_use( elem.first );
         if( method ) {
-            return std::make_tuple( method->get_type(), method->get_name(), ss, method->get_description() );
+            return std::make_tuple( method->get_type(), method->get_name(), ss, string_join( foldstring( method->get_description(), 60 ), "\n" ) );
         } else {
             return std::make_tuple( errstring, std::string( "NO USE FUNCTION" ), ss, std::string() );
         }
