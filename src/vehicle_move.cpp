@@ -1335,21 +1335,6 @@ static void apply_tire_punctures( vehicle_part *vp_wheel, std::vector<std::strin
     if( vp_wheel->has_fault( fault_flat_tire_riding_on_rims ) ) { // Already in worst possible state.
         return;
     }
-
-    if( !vp_wheel->has_fault( fault_punctured_tires ) ) {
-        if( vp_wheel->fault_set( fault_punctured_tires ) ) {
-            messages->emplace_back( string_format(
-                                        _( "You hear a loud pop from below, and your vehicle suddenly start to wobble like crazy!" ) ) );
-            return;
-        }
-    } else {
-        // Already punctured, but get hit *again* --> chance to instantly set 100% flat
-        if( vp_wheel->fault_set( fault_flat_tire_riding_on_rims ) ) {
-            messages->emplace_back( string_format(
-                                        _( "With a jolt, hitting something has blown out your tire!" ) ) );
-            return;
-        }
-    }
 }
 
 static void apply_generic_wheel_fault( vehicle_part *vp_wheel, std::vector<std::string> *messages )
