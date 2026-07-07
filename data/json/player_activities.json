@@ -806,6 +806,13 @@
     "based_on": "speed"
   },
   {
+    "id": "ACT_DEMOLITION_HAMMER",
+    "type": "activity_type",
+    "activity_level": "ACTIVE_EXERCISE",
+    "verb": "drilling",
+    "based_on": "speed"
+  },
+  {
     "id": "ACT_CHURN",
     "type": "activity_type",
     "activity_level": "EXTRA_EXERCISE",

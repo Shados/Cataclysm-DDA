@@ -139,6 +139,7 @@
 #include "weather_type.h"
 
 static const activity_id ACT_JACKHAMMER( "ACT_JACKHAMMER" );
+static const activity_id ACT_DEMOLITION_HAMMER( "ACT_DEMOLITION_HAMMER" );
 static const activity_id ACT_PICKAXE( "ACT_PICKAXE" );
 
 static const addiction_id addiction_marloss_b( "marloss_b" );
@@ -3158,6 +3159,8 @@ static std::optional<int> dig_tool( Character *p, item *it, const tripoint_bub_m
     const tripoint_abs_ms pnt_abs = here.get_abs( pnt );
     if( activity == ACT_JACKHAMMER ) {
         p->assign_activity( jackhammer_activity_actor( mining_tool, pnt_abs, digging_time ) );
+    } else if( activity == ACT_DEMOLITION_HAMMER ) {
+        p->assign_activity( demolition_hammer_activity_actor( mining_tool, pnt_abs, digging_time ) );
     } else if( activity == ACT_PICKAXE ) {
         p->assign_activity( pickaxe_activity_actor( mining_tool, pnt_abs, digging_time ) );
     }
@@ -3173,6 +3176,14 @@ static std::optional<int> dig_tool( Character *p, item *it, const tripoint_bub_m
 std::optional<int> iuse::jackhammer( Character *p, item *it, const tripoint_bub_ms &pos )
 {
     return dig_tool( p, it, pos, ACT_JACKHAMMER,
+                     _( "Drill where?" ), _( "You can't drill there." ),
+                     _( "You start drilling into the %1$s with your %2$s." ) );
+
+}
+
+std::optional<int> iuse::demolition_hammer( Character *p, item *it, const tripoint_bub_ms &pos )
+{
+    return dig_tool( p, it, pos, ACT_DEMOLITION_HAMMER,
                      _( "Drill where?" ), _( "You can't drill there." ),
                      _( "You start drilling into the %1$s with your %2$s." ) );
 

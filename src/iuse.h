@@ -129,6 +129,7 @@ std::optional<int> heatpack( Character *, item *, const tripoint_bub_ms & );
 std::optional<int> hotplate( Character *, item *, const tripoint_bub_ms & );
 std::optional<int> hotplate_atomic( Character *, item *, const tripoint_bub_ms & );
 std::optional<int> jackhammer( Character *, item *, const tripoint_bub_ms & );
+std::optional<int> demolition_hammer( Character *, item *, const tripoint_bub_ms & );
 std::optional<int> jet_injector( Character *, item *, const tripoint_bub_ms & );
 std::optional<int> lumber( Character *, item *, const tripoint_bub_ms & );
 std::optional<int> ma_manual( Character *, item *, const tripoint_bub_ms & );

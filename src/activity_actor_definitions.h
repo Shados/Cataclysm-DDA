@@ -1772,6 +1772,21 @@ class jackhammer_activity_actor : public mine_activity_actor
         static std::unique_ptr<activity_actor> deserialize( JsonValue &jsin );
 };
 
+class demolition_hammer_activity_actor : public mine_activity_actor
+{
+    public:
+        using mine_activity_actor::mine_activity_actor;
+        const activity_id &get_type() const override {
+            static const activity_id ACT_DEMOLITION_HAMMER( "ACT_DEMOLITION_HAMMER" );
+            return ACT_DEMOLITION_HAMMER;
+        }
+        std::unique_ptr<activity_actor> clone() const override {
+            return std::make_unique<demolition_hammer_activity_actor>( *this );
+        }
+        void do_turn( player_activity &, Character & ) override;
+        static std::unique_ptr<activity_actor> deserialize( JsonValue &jsin );
+};
+
 class open_gate_activity_actor : public activity_actor
 {
     private:

@@ -2121,6 +2121,7 @@ void Item_factory::init()
     add_iuse( "HOTPLATE_ATOMIC", &iuse::hotplate_atomic );
     add_iuse( "INHALER", &iuse::inhaler );
     add_iuse( "JACKHAMMER", &iuse::jackhammer );
+    add_iuse( "DEMOLITION_HAMMER", &iuse::demolition_hammer );
     add_iuse( "JET_INJECTOR", &iuse::jet_injector );
     add_iuse( "LUMBER", &iuse::lumber );
     add_iuse( "MACE", &iuse::mace );

@@ -486,6 +486,11 @@
   },
   {
     "type": "item_action",
+    "id": "DEMOLITION_HAMMER",
+    "name": { "str": "Drill" }
+  },
+  {
+    "type": "item_action",
     "id": "JET_INJECTOR",
     "name": { "str": "Inject" }
   },

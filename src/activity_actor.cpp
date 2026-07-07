@@ -197,6 +197,7 @@ static const activity_id ACT_HOTWIRE_CAR( "ACT_HOTWIRE_CAR" );
 static const activity_id ACT_INSERT_ITEM( "ACT_INSERT_ITEM" );
 static const activity_id ACT_INVOKE_ITEM( "ACT_INVOKE_ITEM" );
 static const activity_id ACT_JACKHAMMER( "ACT_JACKHAMMER" );
+static const activity_id ACT_DEMOLITION_HAMMER( "ACT_DEMOLITION_HAMMER" );
 static const activity_id ACT_LOCKPICK( "ACT_LOCKPICK" );
 static const activity_id ACT_LONGSALVAGE( "ACT_LONGSALVAGE" );
 static const activity_id ACT_MEDITATE( "ACT_MEDITATE" );
@@ -10990,6 +10991,17 @@ void jackhammer_activity_actor::do_turn( player_activity &, Character & )
     }
 }
 
+void demolition_hammer_activity_actor::do_turn( player_activity &, Character & )
+{
+    const tripoint_bub_ms &pos = get_map().get_bub( mined_location );
+    sfx::play_activity_sound( "tool", "pickaxe", sfx::get_heard_volume( pos ) );
+    // each turn is too much
+    if( calendar::once_every( 1_minutes ) ) {
+        //~ Sound of a Pickaxe at work!
+        sounds::sound( pos, 30, sounds::sound_t::destructive_activity, _( "CHNK!  CHNK!  CHNK!" ) );
+    }
+}
+
 void pickaxe_activity_actor::mining_strain( Character &who )
 {
     if( who.is_avatar() ) {
@@ -11073,6 +11085,13 @@ std::unique_ptr<activity_actor> pickaxe_activity_actor::deserialize( JsonValue &
 std::unique_ptr<activity_actor> jackhammer_activity_actor::deserialize( JsonValue &jsin )
 {
     jackhammer_activity_actor actor;
+    actor.deserialize_base( jsin );
+    return actor.clone();
+}
+
+std::unique_ptr<activity_actor> demolition_hammer_activity_actor::deserialize( JsonValue &jsin )
+{
+    demolition_hammer_activity_actor actor;
     actor.deserialize_base( jsin );
     return actor.clone();
 }
@@ -14949,6 +14968,7 @@ deserialize_functions = {
     { ACT_INSERT_ITEM, &insert_item_activity_actor::deserialize },
     { ACT_INVOKE_ITEM, &invoke_item_activity_actor::deserialize },
     { ACT_JACKHAMMER, &jackhammer_activity_actor::deserialize },
+    { ACT_DEMOLITION_HAMMER, &demolition_hammer_activity_actor::deserialize },
     { ACT_LOCKPICK, &lockpick_activity_actor::deserialize },
     { ACT_LONGSALVAGE, &longsalvage_activity_actor::deserialize },
     { ACT_MEDITATE, &meditate_activity_actor::deserialize },

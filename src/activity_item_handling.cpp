@@ -2104,7 +2104,8 @@ activity_reason_info multi_mine_activity_actor::multi_activity_can_do( Character
     }
     std::vector<item *> mining_inv = you.items_with( [&you]( const item & itm ) {
         return ( itm.has_flag( flag_DIG_TOOL ) && !itm.type->can_use( "JACKHAMMER" ) ) ||
-               ( itm.type->can_use( "JACKHAMMER" ) && itm.ammo_sufficient( &you ) );
+               ( itm.type->can_use( "JACKHAMMER" ) && itm.ammo_sufficient( &you ) ) ||
+               ( itm.type->can_use( "DEMOLITION_HAMMER" ) && itm.ammo_sufficient( &you ) );
     } );
     if( mining_inv.empty() ) {
         return activity_reason_info::fail( do_activity_reason::NEEDS_MINING );
@@ -3359,6 +3360,7 @@ static bool mine_activity( Character &you, const tripoint_bub_ms &src_loc )
     const bool is_wall_mining = here.has_flag_ter_or_furn( ter_furn_flag::TFLAG_WALL, src_loc );
     std::vector<item *> mining_inv = you.items_with( [&you, is_wall_mining]( const item & itm ) {
         return ( itm.has_flag( flag_DIG_TOOL ) && !itm.type->can_use( "JACKHAMMER" ) ) ||
+               ( is_wall_mining && itm.type->can_use( "DEMOLITION_HAMMER" ) && itm.ammo_sufficient( &you ) ) ||
                ( !is_wall_mining && ( itm.type->can_use( "JACKHAMMER" ) && itm.ammo_sufficient( &you ) ) );
     } );
     // All other failure conditions are handled in subsequent calls to dig_tool() with specific messaging for the player. This is just an early short circuit.
@@ -3373,12 +3375,12 @@ static bool mine_activity( Character &you, const tripoint_bub_ms &src_loc )
     for( item *elem : mining_inv ) {
         if( chosen_item == nullptr ) {
             chosen_item = elem;
-            if( elem->type->can_use( "JACKHAMMER" ) ) {
+            if( elem->type->can_use( "JACKHAMMER" ) || elem->type->can_use( "DEMOLITION_HAMMER" ) ) {
                 powered = true;
             }
         } else {
             // prioritise powered tools
-            if( chosen_item->type->can_use( "PICKAXE" ) && elem->type->can_use( "JACKHAMMER" ) ) {
+            if( chosen_item->type->can_use( "PICKAXE" ) && ( elem->type->can_use( "JACKHAMMER" ) || elem->type->can_use( "DEMOLITION_HAMMER" ) ) ) {
                 chosen_item = elem;
                 powered = true;
                 break;
@@ -3390,7 +3392,11 @@ static bool mine_activity( Character &you, const tripoint_bub_ms &src_loc )
     }
     std::optional<int> did_we_mine = std::nullopt;
     if( powered ) {
-        did_we_mine = iuse::jackhammer( &you, chosen_item, src_loc );
+        if( chosen_item->type->can_use( "JACKHAMMER" ) ) {
+            did_we_mine = iuse::jackhammer( &you, chosen_item, src_loc );
+        } else {
+            did_we_mine = iuse::demolition_hammer( &you, chosen_item, src_loc );
+        }
     } else {
         did_we_mine = iuse::pickaxe( &you, chosen_item, src_loc );
     }

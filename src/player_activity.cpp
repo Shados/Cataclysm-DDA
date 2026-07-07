@@ -44,6 +44,7 @@ static const activity_id ACT_HACKSAW( "ACT_HACKSAW" );
 static const activity_id ACT_HEATING( "ACT_HEATING" );
 static const activity_id ACT_INVOKE_ITEM( "ACT_INVOKE_ITEM" );
 static const activity_id ACT_JACKHAMMER( "ACT_JACKHAMMER" );
+static const activity_id ACT_DEMOLITION_HAMMER( "ACT_DEMOLITION_HAMMER" );
 static const activity_id ACT_MIGRATION_CANCEL( "ACT_MIGRATION_CANCEL" );
 static const activity_id ACT_NULL( "ACT_NULL" );
 static const activity_id ACT_PICKAXE( "ACT_PICKAXE" );
@@ -163,6 +164,7 @@ std::optional<std::string> player_activity::get_progress_message( const avatar &
     } else if( moves_total > 0 ) {
         if( type == ACT_HACKSAW ||
             type == ACT_JACKHAMMER ||
+            type == ACT_DEMOLITION_HAMMER ||
             type == ACT_PICKAXE ||
             type == ACT_VEHICLE ||
             type == ACT_CHOP_TREE ||
