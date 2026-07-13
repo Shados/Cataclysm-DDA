@@ -41,9 +41,10 @@
         "volume_encumber_modifier": 0,
         "description": "Attachment points for exoskeleton head armor.",
         "flag_restriction": [ "EXO_HELMET_PLATE" ],
-        "max_contains_volume": "20000 ml",
-        "max_contains_weight": "20000 g",
-        "moves": 1000
+        "max_contains_volume": "100 L",
+        "max_contains_weight": "100 kg",
+        "max_item_length": "300 cm",
+        "moves": 0
       },
       {
         "pocket_type": "CONTAINER",
@@ -52,9 +53,10 @@
         "volume_encumber_modifier": 0,
         "description": "Attachment points for exoskeleton torso armor.",
         "flag_restriction": [ "EXO_TORSO_PLATE" ],
-        "max_contains_volume": "20000 ml",
-        "max_contains_weight": "20000 g",
-        "moves": 1000
+        "max_contains_volume": "100 L",
+        "max_contains_weight": "100 kg",
+        "max_item_length": "300 cm",
+        "moves": 0
       },
       {
         "pocket_type": "CONTAINER",
@@ -63,9 +65,10 @@
         "volume_encumber_modifier": 0,
         "description": "Attachment points for exoskeleton arm armor.",
         "flag_restriction": [ "EXO_ARM_PLATE" ],
-        "max_contains_volume": "20000 ml",
-        "max_contains_weight": "20000 g",
-        "moves": 1000
+        "max_contains_volume": "100 L",
+        "max_contains_weight": "100 kg",
+        "max_item_length": "300 cm",
+        "moves": 0
       },
       {
         "pocket_type": "CONTAINER",
@@ -74,9 +77,10 @@
         "volume_encumber_modifier": 0,
         "description": "Attachment points for exoskeleton leg armor.",
         "flag_restriction": [ "EXO_LEG_PLATE" ],
-        "max_contains_volume": "20000 ml",
-        "max_contains_weight": "20000 g",
-        "moves": 1000
+        "max_contains_volume": "100 L",
+        "max_contains_weight": "100 kg",
+        "max_item_length": "300 cm",
+        "moves": 0
       }
     ],
     "armor": [
