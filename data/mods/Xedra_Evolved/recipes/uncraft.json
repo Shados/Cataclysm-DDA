@@ -238,5 +238,45 @@
     "time": "5 m",
     "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "ANVIL", "level": 3 }, { "id": "WRENCH", "level": 1 } ],
     "components": [ [ [ "scrap_moon_tears", 12 ] ], [ [ "moon_tear_wire", 16 ] ] ]
+  },
+  {
+    "result": "sheet_glimmer_fur_patchwork",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "time": "1 m",
+    "qualities": [ { "id": "CUT", "level": 2 } ],
+    "components": [ [ [ "patch_fae_fur", 8 ] ] ]
+  },
+  {
+    "result": "tanned_glimmer_pelt",
+    "type": "uncraft",
+    "time": "2 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "qualities": [ { "id": "CUT", "level": 2 } ],
+    "components": [ [ [ "patch_fae_fur", 8 ] ] ]
+  },
+  {
+    "result": "boots_glimmer_fur",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "time": "3 m",
+    "components": [ [ [ "sole_rubber", 1 ] ], [ [ "patch_fae_fur", 8 ] ], [ [ "leather", 10 ] ] ],
+    "qualities": [ { "id": "CUT", "level": 2 } ]
+  },
+  {
+    "result": "xs_boots_glimmer_fur",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "time": "3 m",
+    "components": [ [ [ "sole_rubber", 1 ] ], [ [ "patch_fae_fur", 6 ] ], [ [ "leather", 8 ] ] ],
+    "qualities": [ { "id": "CUT", "level": 2 } ]
+  },
+  {
+    "result": "xl_boots_glimmer_fur",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "time": "3 m",
+    "components": [ [ [ "sole_rubber", 1 ] ], [ [ "patch_fae_fur", 10 ] ], [ [ "leather", 12 ] ] ],
+    "qualities": [ { "id": "CUT", "level": 2 } ]
   }
 ]

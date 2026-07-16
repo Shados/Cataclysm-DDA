@@ -82,5 +82,48 @@
       "moons_tears_katana"
     ],
     "difficulty": 1
+  },
+  {
+    "id": "nested_glimmer_clothing",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_XEDRA",
+    "subcategory": "CSC_XEDRA_MISC",
+    "name": "glimmer fur clothes",
+    "description": "Recipes related to turning glimmer fur into clothing.",
+    "skill_used": "tailor",
+    "nested_category_data": [
+      "sheet_glimmer_fur_patchwork",
+      "tanning_glimmer_pelt_modern",
+      "cured_glimmer_pelt",
+      "boots_glimmer_fur",
+      "xs_boots_glimmer_fur",
+      "xl_boots_glimmer_fur",
+      "cloak_glimmer_fur",
+      "coat_glimmer_fur",
+      "xs_coat_glimmer_fur",
+      "xl_coat_glimmer_fur",
+      "duster_glimmer_fur",
+      "xs_duster_glimmer_fur",
+      "xl_duster_glimmer_fur",
+      "sleeveless_duster_glimmer_fur",
+      "sleeveless_duster_glimmer_fur_from_duster_glimmer_fur",
+      "sleeveless_trenchcoat_glimmer_fur_from_scratch",
+      "sleeveless_trenchcoat_glimmer_fur_from_trenchcoat_glimmer_fur",
+      "trenchcoat_glimmer_fur"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": "nested_glimmer_armor",
+    "type": "nested_category",
+    "activity_level": "LIGHT_EXERCISE",
+    "category": "CC_XEDRA",
+    "subcategory": "CSC_XEDRA_ARMOR",
+    "name": "glimmer fur armor",
+    "description": "Recipes related to turning glimmer fur into armor.",
+    "skill_used": "tailor",
+    "nested_category_data": [  ],
+    "difficulty": 1
   }
 ]

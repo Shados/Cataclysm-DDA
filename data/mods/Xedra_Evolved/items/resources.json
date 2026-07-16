@@ -177,6 +177,32 @@
     "flags": [ "TRADER_AVOID", "ZERO_WEIGHT", "NO_DROP" ]
   },
   {
+    "id": "scrap_fae_fur",
+    "copy-from": "scrap_worthless",
+    "type": "ITEM",
+    "name": { "str_sp": "glimmer fur scraps" },
+    "description": "A handful of oddly-shaped smallish bits of glimmer fur, waste material from tailoring projects.  Not useful for much and usually disposed of.",
+    "price": "0 cent",
+    "weight": "3 g",
+    "volume": "15 ml",
+    "material": [ "fae_fur" ]
+  },
+  {
+    "type": "ITEM",
+    "id": "patch_fae_fur",
+    "symbol": ",",
+    "color": "brown",
+    "name": { "str": "glimmer fur patch", "str_pl": "glimmer fur patches" },
+    "description": "A small bolt of glimmer fur from a fae animal, roughly six inches square.  Can be made into patchwork glimmer fur sheets or used to repair glimmer fur fabric.",
+    "price": "10 USD",
+    "price_postapoc": "10 cent",
+    "material": [ "fae_fur", "leather" ],
+    "flags": [ "NO_SALVAGE" ],
+    "weight": "46 g",
+    "volume": "58 ml",
+    "category": "spare_parts"
+  },
+  {
     "type": "ITEM",
     "id": "tanned_glimmer_pelt",
     "symbol": ",",
@@ -185,6 +211,20 @@
     "description": "A folded sheet of glimmer fur made from carefully tanned fae animal pelt.  Can be cut up or used as is.",
     "price": "50 USD",
     "price_postapoc": "5 USD",
+    "material": [ "fae_fur" ],
+    "weight": "372 g",
+    "volume": "465 ml",
+    "category": "spare_parts"
+  },
+  {
+    "type": "ITEM",
+    "id": "sheet_glimmer_fur_patchwork",
+    "symbol": ",",
+    "color": "brown",
+    "name": { "str": "patchwork glimmer fur sheet" },
+    "description": "A 12-inch by 24-inch sheet of glimmer fur sewn together from patches.  Can be cut up or used as is.",
+    "price": "25 USD",
+    "price_postapoc": "2 USD 50 cent",
     "material": [ "fae_fur" ],
     "weight": "372 g",
     "volume": "465 ml",
